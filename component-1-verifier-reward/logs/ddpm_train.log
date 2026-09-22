@@ -361,3 +361,10 @@ event=step epoch=46 step=7160 loss=0.11308 avg_loss_100=0.10987 elapsed_sec=705.
 event=step epoch=47 step=7180 loss=0.10291 avg_loss_100=0.10917 elapsed_sec=707.4
 event=step epoch=47 step=7200 loss=0.12219 avg_loss_100=0.10955 elapsed_sec=709.3
 event=step epoch=47 step=7220 loss=0.10659 avg_loss_100=0.10965 elapsed_sec=711.3
+event=step epoch=47 step=7240 loss=0.11046 avg_loss_100=0.10984 elapsed_sec=713.5
+event=step epoch=47 step=7260 loss=0.10471 avg_loss_100=0.10947 elapsed_sec=715.2
+event=step epoch=47 step=7280 loss=0.107 avg_loss_100=0.11004 elapsed_sec=717.3
+event=step epoch=47 step=7300 loss=0.11018 avg_loss_100=0.10983 elapsed_sec=719.5
+event=step epoch=47 step=7320 loss=0.10854 avg_loss_100=0.10956 elapsed_sec=721.6
+event=step epoch=48 step=7340 loss=0.1014 avg_loss_100=0.1098 elapsed_sec=723.6
+event=step epoch=48 step=7360 loss=0.10718 avg_loss_100=0.11025 elapsed_sec=725.6
