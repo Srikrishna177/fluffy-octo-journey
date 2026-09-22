@@ -1,0 +1,16 @@
+{"event": "start", "args": {"budget_sec": 20.0, "batch_size": 16, "lr": 0.0001, "T": 50, "target_class": 7, "num_inner_epochs": 1, "clip_eps": 0.0001, "seed": 1, "ckpt_every_sec": 8.0, "kl_every": 2, "base_ckpt": "/home/user/fluffy-octo-journey/component-1-verifier-reward/repro/src/../checkpoints/ddpm_base.pt", "classifier_ckpt": "/home/user/fluffy-octo-journey/component-1-verifier-reward/repro/src/../checkpoints/classifier.pt"}}
+{"event": "iter", "it": 0, "reward_mean": 0.1064, "reward_std": 0.0015, "loss": 2e-06, "elapsed_sec": 4.4, "kl_to_base": 0.2595}
+{"event": "iter", "it": 1, "reward_mean": 0.1063, "reward_std": 0.0016, "loss": 2e-06, "elapsed_sec": 6.4}
+{"event": "iter", "it": 2, "reward_mean": 0.106, "reward_std": 0.0011, "loss": 4e-06, "elapsed_sec": 7.3, "kl_to_base": 1.9141}
+{"event": "iter", "it": 3, "reward_mean": 0.107, "reward_std": 0.0021, "loss": -4e-06, "elapsed_sec": 9.0}
+{"event": "iter", "it": 4, "reward_mean": 0.106, "reward_std": 0.0012, "loss": -6e-06, "elapsed_sec": 9.9, "kl_to_base": 4.4479}
+{"event": "iter", "it": 5, "reward_mean": 0.1053, "reward_std": 0.0015, "loss": 6e-06, "elapsed_sec": 11.4}
+{"event": "iter", "it": 6, "reward_mean": 0.106, "reward_std": 0.0015, "loss": -6e-06, "elapsed_sec": 12.5, "kl_to_base": 6.1947}
+{"event": "iter", "it": 7, "reward_mean": 0.1057, "reward_std": 0.0011, "loss": 5e-06, "elapsed_sec": 14.1}
+{"event": "iter", "it": 8, "reward_mean": 0.1057, "reward_std": 0.0012, "loss": -5e-06, "elapsed_sec": 15.0, "kl_to_base": 6.5284}
+{"event": "iter", "it": 9, "reward_mean": 0.1055, "reward_std": 0.0009, "loss": -2e-06, "elapsed_sec": 16.2}
+{"event": "iter", "it": 10, "reward_mean": 0.1059, "reward_std": 0.0014, "loss": -1e-06, "elapsed_sec": 17.1, "kl_to_base": 6.4918}
+{"event": "iter", "it": 11, "reward_mean": 0.1062, "reward_std": 0.0015, "loss": -5e-06, "elapsed_sec": 18.4}
+{"event": "iter", "it": 12, "reward_mean": 0.1072, "reward_std": 0.0012, "loss": 1e-06, "elapsed_sec": 19.3, "kl_to_base": 7.8853}
+{"event": "iter", "it": 13, "reward_mean": 0.1074, "reward_std": 0.0016, "loss": -0.0, "elapsed_sec": 20.8}
+{"event": "done", "elapsed_sec": 20.8, "total_iters": 14}
