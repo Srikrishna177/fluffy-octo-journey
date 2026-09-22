@@ -1,0 +1,8 @@
+# Extra dependencies for a full paper-scale run on RunPod (A100), on top of
+# requirements.txt. Not needed / not installed for the toy CPU repro.
+diffusers>=0.27
+transformers>=4.40
+accelerate>=0.30
+image-reward>=1.5     # ImageReward, the reward model DDPO's paper uses (arXiv 2305.13301 sec 5)
+ftfy
+wandb

@@ -1,0 +1,8 @@
+# Toy-scale (CPU) reproduction requirements.
+# Installed in this sandbox via: pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# (that index was blocked by the sandbox proxy; plain `pip install torch torchvision` from PyPI worked instead
+# and also resolves to a CPU-runnable build when no CUDA device is present.)
+torch>=2.2
+torchvision>=0.17
+numpy>=1.24
+matplotlib>=3.7
