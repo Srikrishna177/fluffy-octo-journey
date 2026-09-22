@@ -214,3 +214,32 @@ event=iter it=211 reward_mean=0.9985 reward_std=0.0064 loss=-9e-06 elapsed_sec=1
 event=iter it=212 reward_mean=0.9999 reward_std=0.0001 loss=0.001159 elapsed_sec=1049.3
 event=iter it=213 reward_mean=1.0 reward_std=0.0001 loss=0.000378 elapsed_sec=1053.5
 event=iter it=214 reward_mean=0.9999 reward_std=0.0004 loss=-0.00018 elapsed_sec=1058.0
+event=iter it=215 reward_mean=0.9999 reward_std=0.0003 loss=-3.4e-05 elapsed_sec=1062.8 kl_to_base=52.367
+event=iter it=216 reward_mean=0.9999 reward_std=0.0002 loss=-0.000536 elapsed_sec=1069.4
+event=iter it=217 reward_mean=0.9998 reward_std=0.0008 loss=-1.4e-05 elapsed_sec=1073.3
+event=iter it=218 reward_mean=0.9999 reward_std=0.0002 loss=-0.000249 elapsed_sec=1077.2
+event=iter it=219 reward_mean=0.9999 reward_std=0.0003 loss=0.000283 elapsed_sec=1081.0
+event=iter it=220 reward_mean=0.9993 reward_std=0.0031 loss=3.2e-05 elapsed_sec=1085.7 kl_to_base=54.293
+event=iter it=221 reward_mean=0.9999 reward_std=0.0002 loss=-6.5e-05 elapsed_sec=1092.7
+event=iter it=222 reward_mean=0.9999 reward_std=0.0003 loss=0.000178 elapsed_sec=1096.7
+event=iter it=223 reward_mean=0.9999 reward_std=0.0001 loss=-0.000143 elapsed_sec=1100.7
+event=iter it=224 reward_mean=0.9995 reward_std=0.0027 loss=-3.7e-05 elapsed_sec=1104.7
+event=iter it=225 reward_mean=0.9998 reward_std=0.0007 loss=-8e-06 elapsed_sec=1108.7 kl_to_base=52.7218
+event=iter it=226 reward_mean=0.9999 reward_std=0.0003 loss=7.1e-05 elapsed_sec=1115.0
+event=iter it=227 reward_mean=0.9999 reward_std=0.0003 loss=3.6e-05 elapsed_sec=1119.5
+event=iter it=228 reward_mean=0.9998 reward_std=0.0005 loss=2e-06 elapsed_sec=1123.6
+event=iter it=229 reward_mean=0.9997 reward_std=0.0013 loss=9e-06 elapsed_sec=1128.1
+event=iter it=230 reward_mean=0.9999 reward_std=0.0006 loss=9.6e-05 elapsed_sec=1132.2 kl_to_base=52.8464
+event=iter it=231 reward_mean=1.0 reward_std=0.0 loss=0.001059 elapsed_sec=1138.9
+event=iter it=232 reward_mean=0.9999 reward_std=0.0002 loss=3.5e-05 elapsed_sec=1142.9
+event=iter it=233 reward_mean=0.9999 reward_std=0.0003 loss=0.000129 elapsed_sec=1146.9
+event=iter it=234 reward_mean=0.9997 reward_std=0.0018 loss=-4.4e-05 elapsed_sec=1151.1
+event=iter it=235 reward_mean=0.9998 reward_std=0.0004 loss=0.000163 elapsed_sec=1155.2 kl_to_base=53.2486
+event=iter it=236 reward_mean=0.9999 reward_std=0.0001 loss=-7e-05 elapsed_sec=1161.9
+event=iter it=237 reward_mean=0.9999 reward_std=0.0001 loss=0.00038 elapsed_sec=1166.7
+event=iter it=238 reward_mean=0.9999 reward_std=0.0002 loss=-2.4e-05 elapsed_sec=1170.8
+event=iter it=239 reward_mean=1.0 reward_std=0.0001 loss=4.5e-05 elapsed_sec=1175.7
+event=iter it=240 reward_mean=0.9999 reward_std=0.0002 loss=6.4e-05 elapsed_sec=1179.8 kl_to_base=53.3763
+event=iter it=241 reward_mean=0.9997 reward_std=0.0011 loss=3e-06 elapsed_sec=1186.4
+event=iter it=242 reward_mean=0.9999 reward_std=0.0002 loss=0.00049 elapsed_sec=1191.6
+event=iter it=243 reward_mean=0.9999 reward_std=0.0003 loss=-7.7e-05 elapsed_sec=1195.4
