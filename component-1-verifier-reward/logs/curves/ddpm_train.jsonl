@@ -915,3 +915,9 @@
 {"event": "step", "epoch": 118, "step": 18260, "loss": 0.09888, "avg_loss_100": 0.10275, "elapsed_sec": 1784.5}
 {"event": "step", "epoch": 118, "step": 18280, "loss": 0.09872, "avg_loss_100": 0.10237, "elapsed_sec": 1786.6}
 {"event": "step", "epoch": 118, "step": 18300, "loss": 0.09723, "avg_loss_100": 0.10221, "elapsed_sec": 1788.9}
+{"event": "step", "epoch": 118, "step": 18320, "loss": 0.10138, "avg_loss_100": 0.10274, "elapsed_sec": 1791.0}
+{"event": "step", "epoch": 118, "step": 18340, "loss": 0.10159, "avg_loss_100": 0.10302, "elapsed_sec": 1793.0}
+{"event": "step", "epoch": 118, "step": 18360, "loss": 0.09415, "avg_loss_100": 0.10287, "elapsed_sec": 1795.0}
+{"event": "step", "epoch": 118, "step": 18380, "loss": 0.10492, "avg_loss_100": 0.10332, "elapsed_sec": 1796.9}
+{"event": "step", "epoch": 118, "step": 18400, "loss": 0.10417, "avg_loss_100": 0.10372, "elapsed_sec": 1798.8}
+{"event": "done", "elapsed_sec": 1800.1, "total_steps": 18415, "total_epochs": 119, "final_avg_loss_100": 0.10309}

@@ -24,7 +24,16 @@ the incremental version if you're reading a partial draft.)_
 - Params: 308,641 (spec: ~150-400k — in range)
 - Beta schedule: linear, beta_start=1e-4, beta_end=0.02, T=50 (spec allows linear or cosine; linear chosen — simpler, no material reason to expect it to change the toy-scale outcome).
 - Budget: 1800s (30 min) — a deliberately shorter cut of the spec's 45-60 min cap; see "Deviations."
-- _[results filled in after the run completes — see below]_
+- Wall clock: 1800.1s (ran to the budget cap, as intended)
+- Steps: 18,415 (119 epochs over the 20k-sample train subset, batch 128)
+- Loss: MSE(pred-eps, true-eps) fell from ~1.04 (step 0) to a stable ~0.10 (100-step
+  rolling average) by the end of training — see `curves/ddpm_train.jsonl`,
+  plot: `plots/ddpm_loss.png`. Loss was still very slowly decreasing at the
+  cutoff (0.103 avg at step ~18300 vs. ~0.105 around step ~15000), i.e.
+  near-converged but not perfectly flat — consistent with using less than the
+  full 45-60 min cap (a deliberate scope decision, not a failure to converge).
+- Checkpoint: `checkpoints/ddpm_base.pt` (also serves as the frozen reference
+  model for the DDPO KL-to-base estimate in stage 3).
 
 ## Stage 3 — DDPO RL fine-tuning
 
