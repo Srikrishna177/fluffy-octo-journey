@@ -1,0 +1,12 @@
+{
+  "n_eval": 64,
+  "target_class": 7,
+  "seed": 12345,
+  "reward_mean_before": 0.06716180592775345,
+  "reward_std_before": 0.1765996515750885,
+  "reward_mean_after": 0.9998378157615662,
+  "reward_std_after": 0.000552587560378015,
+  "reward_delta": 0.9326760098338127,
+  "frac_argmax_is_target_before": 0.09375,
+  "frac_argmax_is_target_after": 1.0
+}
