@@ -115,3 +115,27 @@
 {"event": "iter", "it": 113, "reward_mean": 0.9763, "reward_std": 0.0606, "loss": -0.0, "elapsed_sec": 570.4}
 {"event": "iter", "it": 114, "reward_mean": 0.9939, "reward_std": 0.024, "loss": 4e-06, "elapsed_sec": 574.4}
 {"event": "iter", "it": 115, "reward_mean": 0.966, "reward_std": 0.1447, "loss": -0.0, "elapsed_sec": 579.0, "kl_to_base": 32.5701}
+{"event": "iter", "it": 116, "reward_mean": 0.9894, "reward_std": 0.0368, "loss": 1e-06, "elapsed_sec": 587.2}
+{"event": "iter", "it": 117, "reward_mean": 0.9743, "reward_std": 0.1139, "loss": -0.0, "elapsed_sec": 592.2}
+{"event": "iter", "it": 118, "reward_mean": 0.98, "reward_std": 0.0868, "loss": -0.0, "elapsed_sec": 596.6}
+{"event": "iter", "it": 119, "reward_mean": 0.9757, "reward_std": 0.055, "loss": -1e-06, "elapsed_sec": 600.7}
+{"event": "iter", "it": 120, "reward_mean": 0.9974, "reward_std": 0.0073, "loss": -8e-06, "elapsed_sec": 604.8, "kl_to_base": 32.9795}
+{"event": "iter", "it": 121, "reward_mean": 0.9825, "reward_std": 0.0954, "loss": 1e-06, "elapsed_sec": 611.9}
+{"event": "iter", "it": 122, "reward_mean": 0.9896, "reward_std": 0.0464, "loss": -1e-06, "elapsed_sec": 616.4}
+{"event": "iter", "it": 123, "reward_mean": 0.9923, "reward_std": 0.037, "loss": 1e-06, "elapsed_sec": 620.7}
+{"event": "iter", "it": 124, "reward_mean": 0.9937, "reward_std": 0.0245, "loss": -1e-06, "elapsed_sec": 624.7}
+{"event": "iter", "it": 125, "reward_mean": 0.993, "reward_std": 0.0202, "loss": -3e-06, "elapsed_sec": 629.4, "kl_to_base": 32.6284}
+{"event": "iter", "it": 126, "reward_mean": 0.9978, "reward_std": 0.0085, "loss": 5e-06, "elapsed_sec": 637.0}
+{"event": "iter", "it": 127, "reward_mean": 0.9896, "reward_std": 0.024, "loss": 2e-06, "elapsed_sec": 641.4}
+{"event": "iter", "it": 128, "reward_mean": 0.994, "reward_std": 0.0167, "loss": -1e-06, "elapsed_sec": 646.0}
+{"event": "iter", "it": 129, "reward_mean": 0.9935, "reward_std": 0.0412, "loss": -0.0, "elapsed_sec": 650.1}
+{"event": "iter", "it": 130, "reward_mean": 0.9981, "reward_std": 0.007, "loss": -2e-06, "elapsed_sec": 654.6, "kl_to_base": 33.6073}
+{"event": "iter", "it": 131, "reward_mean": 0.9854, "reward_std": 0.0955, "loss": -0.0, "elapsed_sec": 661.6}
+{"event": "iter", "it": 132, "reward_mean": 0.9919, "reward_std": 0.0456, "loss": -1e-06, "elapsed_sec": 666.0}
+{"event": "iter", "it": 133, "reward_mean": 0.9961, "reward_std": 0.0177, "loss": -1e-06, "elapsed_sec": 670.3}
+{"event": "iter", "it": 134, "reward_mean": 0.9628, "reward_std": 0.1754, "loss": 0.0, "elapsed_sec": 675.3}
+{"event": "iter", "it": 135, "reward_mean": 0.9985, "reward_std": 0.0063, "loss": -8e-06, "elapsed_sec": 679.8, "kl_to_base": 33.2014}
+{"event": "iter", "it": 136, "reward_mean": 0.9957, "reward_std": 0.018, "loss": 4e-06, "elapsed_sec": 686.1}
+{"event": "iter", "it": 137, "reward_mean": 0.9916, "reward_std": 0.0436, "loss": -0.0, "elapsed_sec": 690.4}
+{"event": "iter", "it": 138, "reward_mean": 0.998, "reward_std": 0.0111, "loss": 0.0, "elapsed_sec": 694.5}
+{"event": "iter", "it": 139, "reward_mean": 0.9823, "reward_std": 0.1197, "loss": 0.0, "elapsed_sec": 699.2}
