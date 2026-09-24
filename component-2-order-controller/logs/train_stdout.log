@@ -55,3 +55,6 @@
 [train] step=1225 elapsed=1676.1s loss=0.4496 avg100=0.4295 masked_acc=0.8375
 [train] step=1250 elapsed=1709.5s loss=0.4324 avg100=0.4275 masked_acc=0.8383
 [train] step=1275 elapsed=1743.2s loss=0.4276 avg100=0.4249 masked_acc=0.8439
+[train] step=1300 elapsed=1776.6s loss=0.4416 avg100=0.4252 masked_acc=0.8377
+[train] budget exhausted at step 1318, elapsed=1801.3s
+[train] DONE. steps=1318 total_elapsed=1801.3s checkpoint=checkpoints/maskgit.pt
