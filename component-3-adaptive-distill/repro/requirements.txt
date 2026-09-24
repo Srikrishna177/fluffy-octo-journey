@@ -1,0 +1,8 @@
+# Toy-scale (this sandbox) already has torch/torchvision/matplotlib/numpy
+# pre-installed. This file is for the RunPod full-scale rerun.
+torch>=2.2
+torchvision>=0.17
+numpy
+matplotlib
+tqdm
+pillow

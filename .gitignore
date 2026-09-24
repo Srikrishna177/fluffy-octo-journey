@@ -1,6 +1,7 @@
 component-1-verifier-reward/repro/checkpoints/
 component-2-order-controller/**/checkpoints/
 component-3-adaptive-distill/**/checkpoints/
+component-3-adaptive-distill/repro/data/
 __pycache__/
 *.pyc
 component-2-order-controller/repro/data/

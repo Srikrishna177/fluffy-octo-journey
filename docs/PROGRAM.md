@@ -100,3 +100,21 @@ blocks one of the three components.
   train split, eval uses the MNIST test split — disjoint datasets). Full log:
   `component-2-order-controller/extension/RUN_LOG.md`. Component 2 artifact complete
   end-to-end: `component-2-order-controller/report/REPORT.md`. Proceeding to component 3.
+- 2026-09-24: Component 3 scouted and anchored on Progressive Distillation (Salimans & Ho),
+  reusing Component 1's frozen TinyUNet DDPM as the teacher with a new deterministic DDIM
+  sampler. Reproduction complete: the full 32→16→8→4→2→1-step halving cascade ran to
+  completion in 25.0 min wall-clock (well under the ~45-60 min budget), but the honest
+  finding is a negative one that surfaced *earlier* than DECISION.md's pre-registered risk
+  (expected breakdown mainly at 1-2 steps): trajectory-matching fidelity to the teacher's
+  32-step output collapsed already at the first halving round (32→16 steps; pixel MSE
+  0.00→0.93, never recovering in later rounds), and the per-sample classifier-judge
+  "quality" metric was actively misleading — it stayed high (0.78-0.86 confidence) only
+  because the distilled students had mode-collapsed onto a narrow set of classifier-favored
+  outputs (16-step arm: 64/64 samples predicted class "8", population entropy 0.00 nats vs.
+  the teacher's 1.60), confirmed both visually (sample grid: distilled rows look like
+  unstructured noise, not digits) and via added population-diversity metrics. Diagnostic
+  ablations isolated the cause to the distillation training step itself (not DDIM step-count
+  reduction: the frozen, untrained teacher samples fine at 8-32 steps) and ruled out
+  learning-rate tuning as a fix (10x lower LR still collapses; collapse sets in within ~20
+  gradient steps, long before training loss converges). Full log:
+  `component-3-adaptive-distill/logs/RUN_LOG.md`. Extension phase not yet started.

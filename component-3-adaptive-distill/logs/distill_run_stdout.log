@@ -1,0 +1,723 @@
+[distill] teacher params=308641
+[data] loaded REAL MNIST (train=60000, test=10000)
+[distill] train images=10000 used_real_mnist=True
+event=start n_params=308641 used_real_mnist=True args={'T': 50, 'base_nfe': 32, 'n_train': 10000, 'batch_size': 64, 'lr': 0.0002, 'round_budget_sec': 300.0, 'round_max_steps': 4000, 'total_budget_sec': 3300.0, 'n_eval': 64, 'eval_seed': 12345, 'collapse_ratio': 3.0, 'collapse_conf_floor': 0.15}
+[distill] arm nfe=32 (frozen teacher, no training): {'nfe': 32, 'wall_clock_sec': 0.4449646472930908, 'wall_clock_sec_per_sample': 0.006952572613954544, 'own_quality_mean_top1_conf': 0.8390488624572754, 'own_quality_mean_entropy': 0.44667163491249084, 'trajectory_pixel_mse_vs_teacher32': 0.0, 'trajectory_classifier_l2_vs_teacher32': 0.0, 'trajectory_classifier_kl_vs_teacher32': 0.0}
+[distill] round 1: 32 -> 16 steps, budget=300s
+event=step round=1 step=0 loss=1.558104 avg_loss_50=1.558104 elapsed_sec=0.4
+event=step round=1 step=20 loss=0.642974 avg_loss_50=0.869807 elapsed_sec=6.1
+event=step round=1 step=40 loss=0.474631 avg_loss_50=0.755532 elapsed_sec=11.5
+event=step round=1 step=60 loss=0.662215 avg_loss_50=0.631191 elapsed_sec=17.2
+event=step round=1 step=80 loss=0.53286 avg_loss_50=0.568861 elapsed_sec=22.7
+event=step round=1 step=100 loss=0.511081 avg_loss_50=0.532051 elapsed_sec=28.3
+event=step round=1 step=120 loss=0.412899 avg_loss_50=0.481701 elapsed_sec=33.9
+event=step round=1 step=140 loss=0.380635 avg_loss_50=0.420742 elapsed_sec=39.4
+event=step round=1 step=160 loss=0.344904 avg_loss_50=0.357037 elapsed_sec=44.6
+event=step round=1 step=180 loss=0.335235 avg_loss_50=0.305208 elapsed_sec=50.2
+event=step round=1 step=200 loss=0.286088 avg_loss_50=0.274959 elapsed_sec=55.7
+event=step round=1 step=220 loss=0.237929 avg_loss_50=0.256513 elapsed_sec=61.0
+event=step round=1 step=240 loss=0.159327 avg_loss_50=0.239575 elapsed_sec=66.2
+event=step round=1 step=260 loss=0.164831 avg_loss_50=0.22313 elapsed_sec=71.3
+event=step round=1 step=280 loss=0.167727 avg_loss_50=0.201754 elapsed_sec=76.4
+event=step round=1 step=300 loss=0.178977 avg_loss_50=0.196148 elapsed_sec=81.5
+event=step round=1 step=320 loss=0.180526 avg_loss_50=0.184908 elapsed_sec=86.5
+event=step round=1 step=340 loss=0.230618 avg_loss_50=0.178366 elapsed_sec=91.9
+event=step round=1 step=360 loss=0.179595 avg_loss_50=0.174443 elapsed_sec=97.3
+event=step round=1 step=380 loss=0.128475 avg_loss_50=0.170555 elapsed_sec=102.4
+event=step round=1 step=400 loss=0.162137 avg_loss_50=0.165284 elapsed_sec=107.7
+event=step round=1 step=420 loss=0.170462 avg_loss_50=0.157616 elapsed_sec=113.1
+event=step round=1 step=440 loss=0.182532 avg_loss_50=0.155496 elapsed_sec=118.6
+event=step round=1 step=460 loss=0.136039 avg_loss_50=0.15209 elapsed_sec=124.2
+event=step round=1 step=480 loss=0.221905 avg_loss_50=0.149395 elapsed_sec=129.6
+event=step round=1 step=500 loss=0.147131 avg_loss_50=0.142358 elapsed_sec=135.1
+event=step round=1 step=520 loss=0.190175 avg_loss_50=0.137053 elapsed_sec=140.5
+event=step round=1 step=540 loss=0.193765 avg_loss_50=0.136056 elapsed_sec=145.8
+event=step round=1 step=560 loss=0.148828 avg_loss_50=0.134396 elapsed_sec=151.2
+event=step round=1 step=580 loss=0.083308 avg_loss_50=0.13224 elapsed_sec=156.5
+event=step round=1 step=600 loss=0.150094 avg_loss_50=0.124183 elapsed_sec=162.3
+event=step round=1 step=620 loss=0.101304 avg_loss_50=0.119261 elapsed_sec=168.0
+event=step round=1 step=640 loss=0.107237 avg_loss_50=0.118171 elapsed_sec=173.6
+event=step round=1 step=660 loss=0.078482 avg_loss_50=0.122687 elapsed_sec=179.0
+event=step round=1 step=680 loss=0.132553 avg_loss_50=0.118403 elapsed_sec=184.5
+event=step round=1 step=700 loss=0.1126 avg_loss_50=0.110272 elapsed_sec=190.0
+event=step round=1 step=720 loss=0.195809 avg_loss_50=0.113018 elapsed_sec=195.5
+event=step round=1 step=740 loss=0.107214 avg_loss_50=0.110587 elapsed_sec=200.9
+event=step round=1 step=760 loss=0.084094 avg_loss_50=0.111114 elapsed_sec=206.4
+event=step round=1 step=780 loss=0.105801 avg_loss_50=0.106473 elapsed_sec=211.9
+event=step round=1 step=800 loss=0.15688 avg_loss_50=0.102668 elapsed_sec=217.3
+event=step round=1 step=820 loss=0.10128 avg_loss_50=0.101228 elapsed_sec=222.7
+event=step round=1 step=840 loss=0.098585 avg_loss_50=0.102216 elapsed_sec=228.3
+event=step round=1 step=860 loss=0.069184 avg_loss_50=0.101101 elapsed_sec=233.5
+event=step round=1 step=880 loss=0.099995 avg_loss_50=0.096802 elapsed_sec=238.9
+event=step round=1 step=900 loss=0.123448 avg_loss_50=0.099369 elapsed_sec=244.3
+event=step round=1 step=920 loss=0.091995 avg_loss_50=0.094143 elapsed_sec=249.6
+event=step round=1 step=940 loss=0.070012 avg_loss_50=0.086536 elapsed_sec=255.1
+event=step round=1 step=960 loss=0.092013 avg_loss_50=0.086949 elapsed_sec=260.5
+event=step round=1 step=980 loss=0.08804 avg_loss_50=0.089373 elapsed_sec=266.0
+event=step round=1 step=1000 loss=0.065489 avg_loss_50=0.08963 elapsed_sec=271.5
+event=step round=1 step=1020 loss=0.044654 avg_loss_50=0.090866 elapsed_sec=277.0
+event=step round=1 step=1040 loss=0.071362 avg_loss_50=0.09041 elapsed_sec=282.3
+event=step round=1 step=1060 loss=0.105823 avg_loss_50=0.088489 elapsed_sec=287.7
+event=step round=1 step=1080 loss=0.084873 avg_loss_50=0.091519 elapsed_sec=293.2
+event=step round=1 step=1100 loss=0.110345 avg_loss_50=0.093143 elapsed_sec=298.9
+event=round_done round=1 steps=1105 elapsed_sec=300.1 final_avg_loss=0.091311 old_nfe=32 new_nfe=16
+[distill] arm nfe=16: {'nfe': 16, 'wall_clock_sec': 0.22969341278076172, 'wall_clock_sec_per_sample': 0.003588959574699402, 'own_quality_mean_top1_conf': 0.8624060750007629, 'own_quality_mean_entropy': 0.5415927171707153, 'trajectory_pixel_mse_vs_teacher32': 0.927733838558197, 'trajectory_classifier_l2_vs_teacher32': 0.9869762063026428, 'trajectory_classifier_kl_vs_teacher32': 2.935866594314575, 'train_steps': 1105, 'train_elapsed_sec': 300.0995740890503, 'train_final_avg_loss': 0.0913111551105976}
+[distill] round 2: 16 -> 8 steps, budget=300s
+event=step round=2 step=0 loss=4.218403 avg_loss_50=4.218403 elapsed_sec=0.2
+event=step round=2 step=20 loss=1.575413 avg_loss_50=2.030509 elapsed_sec=3.7
+event=step round=2 step=40 loss=1.201368 avg_loss_50=1.726399 elapsed_sec=7.4
+event=step round=2 step=60 loss=1.057834 avg_loss_50=1.398829 elapsed_sec=10.7
+event=step round=2 step=80 loss=1.053174 avg_loss_50=1.254043 elapsed_sec=14.3
+event=step round=2 step=100 loss=1.130771 avg_loss_50=1.154205 elapsed_sec=17.7
+event=step round=2 step=120 loss=0.966165 avg_loss_50=1.072501 elapsed_sec=21.2
+event=step round=2 step=140 loss=0.936603 avg_loss_50=1.003945 elapsed_sec=25.0
+event=step round=2 step=160 loss=0.932567 avg_loss_50=0.955377 elapsed_sec=28.5
+event=step round=2 step=180 loss=0.782421 avg_loss_50=0.907483 elapsed_sec=31.9
+event=step round=2 step=200 loss=0.915705 avg_loss_50=0.86956 elapsed_sec=35.5
+event=step round=2 step=220 loss=0.800756 avg_loss_50=0.835259 elapsed_sec=39.3
+event=step round=2 step=240 loss=0.698806 avg_loss_50=0.81027 elapsed_sec=42.9
+event=step round=2 step=260 loss=0.742691 avg_loss_50=0.786022 elapsed_sec=46.5
+event=step round=2 step=280 loss=0.787913 avg_loss_50=0.77053 elapsed_sec=50.0
+event=step round=2 step=300 loss=0.754111 avg_loss_50=0.763759 elapsed_sec=53.5
+event=step round=2 step=320 loss=0.735455 avg_loss_50=0.745454 elapsed_sec=57.2
+event=step round=2 step=340 loss=0.697414 avg_loss_50=0.734338 elapsed_sec=60.8
+event=step round=2 step=360 loss=0.704423 avg_loss_50=0.715108 elapsed_sec=64.4
+event=step round=2 step=380 loss=0.708923 avg_loss_50=0.692747 elapsed_sec=67.9
+event=step round=2 step=400 loss=0.643784 avg_loss_50=0.67337 elapsed_sec=71.4
+event=step round=2 step=420 loss=0.65613 avg_loss_50=0.657562 elapsed_sec=74.9
+event=step round=2 step=440 loss=0.599412 avg_loss_50=0.643559 elapsed_sec=78.6
+event=step round=2 step=460 loss=0.620164 avg_loss_50=0.633241 elapsed_sec=82.0
+event=step round=2 step=480 loss=0.652366 avg_loss_50=0.619126 elapsed_sec=85.8
+event=step round=2 step=500 loss=0.563435 avg_loss_50=0.607689 elapsed_sec=89.4
+event=step round=2 step=520 loss=0.560478 avg_loss_50=0.604548 elapsed_sec=93.2
+event=step round=2 step=540 loss=0.573035 avg_loss_50=0.600414 elapsed_sec=96.8
+event=step round=2 step=560 loss=0.676931 avg_loss_50=0.597466 elapsed_sec=100.3
+event=step round=2 step=580 loss=0.602289 avg_loss_50=0.583844 elapsed_sec=103.9
+event=step round=2 step=600 loss=0.574954 avg_loss_50=0.576851 elapsed_sec=107.6
+event=step round=2 step=620 loss=0.518269 avg_loss_50=0.564833 elapsed_sec=111.2
+event=step round=2 step=640 loss=0.58956 avg_loss_50=0.556702 elapsed_sec=114.8
+event=step round=2 step=660 loss=0.479041 avg_loss_50=0.546257 elapsed_sec=118.5
+event=step round=2 step=680 loss=0.548613 avg_loss_50=0.540796 elapsed_sec=122.1
+event=step round=2 step=700 loss=0.554814 avg_loss_50=0.532897 elapsed_sec=126.0
+event=step round=2 step=720 loss=0.497423 avg_loss_50=0.531706 elapsed_sec=129.4
+event=step round=2 step=740 loss=0.575177 avg_loss_50=0.534354 elapsed_sec=132.8
+event=step round=2 step=760 loss=0.557116 avg_loss_50=0.522982 elapsed_sec=136.3
+event=step round=2 step=780 loss=0.50806 avg_loss_50=0.518406 elapsed_sec=140.1
+event=step round=2 step=800 loss=0.534663 avg_loss_50=0.523051 elapsed_sec=143.7
+event=step round=2 step=820 loss=0.552041 avg_loss_50=0.516755 elapsed_sec=147.2
+event=step round=2 step=840 loss=0.516575 avg_loss_50=0.51339 elapsed_sec=150.7
+event=step round=2 step=860 loss=0.523403 avg_loss_50=0.512545 elapsed_sec=154.3
+event=step round=2 step=880 loss=0.523671 avg_loss_50=0.508187 elapsed_sec=157.9
+event=step round=2 step=900 loss=0.496125 avg_loss_50=0.506805 elapsed_sec=161.2
+event=step round=2 step=920 loss=0.560662 avg_loss_50=0.503181 elapsed_sec=164.7
+event=step round=2 step=940 loss=0.498992 avg_loss_50=0.50537 elapsed_sec=168.2
+event=step round=2 step=960 loss=0.469491 avg_loss_50=0.507823 elapsed_sec=171.7
+event=step round=2 step=980 loss=0.446138 avg_loss_50=0.506382 elapsed_sec=175.5
+event=step round=2 step=1000 loss=0.514581 avg_loss_50=0.502728 elapsed_sec=179.1
+event=step round=2 step=1020 loss=0.485302 avg_loss_50=0.500339 elapsed_sec=182.8
+event=step round=2 step=1040 loss=0.50571 avg_loss_50=0.493317 elapsed_sec=186.4
+event=step round=2 step=1060 loss=0.531611 avg_loss_50=0.486423 elapsed_sec=189.7
+event=step round=2 step=1080 loss=0.473251 avg_loss_50=0.489149 elapsed_sec=193.1
+event=step round=2 step=1100 loss=0.484409 avg_loss_50=0.478431 elapsed_sec=196.7
+event=step round=2 step=1120 loss=0.444955 avg_loss_50=0.478227 elapsed_sec=200.3
+event=step round=2 step=1140 loss=0.482037 avg_loss_50=0.476322 elapsed_sec=203.9
+event=step round=2 step=1160 loss=0.51005 avg_loss_50=0.475392 elapsed_sec=207.6
+event=step round=2 step=1180 loss=0.473234 avg_loss_50=0.471991 elapsed_sec=211.3
+event=step round=2 step=1200 loss=0.452924 avg_loss_50=0.467547 elapsed_sec=215.1
+event=step round=2 step=1220 loss=0.531132 avg_loss_50=0.462063 elapsed_sec=218.7
+event=step round=2 step=1240 loss=0.442952 avg_loss_50=0.457914 elapsed_sec=222.4
+event=step round=2 step=1260 loss=0.510346 avg_loss_50=0.46324 elapsed_sec=226.0
+event=step round=2 step=1280 loss=0.474061 avg_loss_50=0.45738 elapsed_sec=229.4
+event=step round=2 step=1300 loss=0.466129 avg_loss_50=0.454618 elapsed_sec=232.9
+event=step round=2 step=1320 loss=0.463597 avg_loss_50=0.459992 elapsed_sec=236.4
+event=step round=2 step=1340 loss=0.514428 avg_loss_50=0.456246 elapsed_sec=240.1
+event=step round=2 step=1360 loss=0.440396 avg_loss_50=0.450348 elapsed_sec=243.8
+event=step round=2 step=1380 loss=0.504257 avg_loss_50=0.451557 elapsed_sec=247.3
+event=step round=2 step=1400 loss=0.436992 avg_loss_50=0.445022 elapsed_sec=250.9
+event=step round=2 step=1420 loss=0.453212 avg_loss_50=0.441893 elapsed_sec=254.6
+event=step round=2 step=1440 loss=0.452788 avg_loss_50=0.437622 elapsed_sec=258.1
+event=step round=2 step=1460 loss=0.378908 avg_loss_50=0.446233 elapsed_sec=261.7
+event=step round=2 step=1480 loss=0.449824 avg_loss_50=0.443508 elapsed_sec=265.2
+event=step round=2 step=1500 loss=0.460957 avg_loss_50=0.444288 elapsed_sec=268.8
+event=step round=2 step=1520 loss=0.483402 avg_loss_50=0.445805 elapsed_sec=272.4
+event=step round=2 step=1540 loss=0.435367 avg_loss_50=0.442435 elapsed_sec=276.1
+event=step round=2 step=1560 loss=0.437532 avg_loss_50=0.43667 elapsed_sec=279.8
+event=step round=2 step=1580 loss=0.392055 avg_loss_50=0.437829 elapsed_sec=283.3
+event=step round=2 step=1600 loss=0.436043 avg_loss_50=0.445977 elapsed_sec=286.6
+event=step round=2 step=1620 loss=0.377964 avg_loss_50=0.442537 elapsed_sec=290.1
+event=step round=2 step=1640 loss=0.407701 avg_loss_50=0.434416 elapsed_sec=293.5
+event=step round=2 step=1660 loss=0.418022 avg_loss_50=0.42772 elapsed_sec=297.2
+event=round_done round=2 steps=1676 elapsed_sec=300.0 final_avg_loss=0.427027 old_nfe=16 new_nfe=8
+[distill] arm nfe=8: {'nfe': 8, 'wall_clock_sec': 0.12126803398132324, 'wall_clock_sec_per_sample': 0.0018948130309581757, 'own_quality_mean_top1_conf': 0.8517105579376221, 'own_quality_mean_entropy': 0.4314787983894348, 'trajectory_pixel_mse_vs_teacher32': 0.8292394280433655, 'trajectory_classifier_l2_vs_teacher32': 0.9334114789962769, 'trajectory_classifier_kl_vs_teacher32': 3.8112637996673584, 'train_steps': 1676, 'train_elapsed_sec': 300.0008957386017, 'train_final_avg_loss': 0.4270268017053604}
+[distill] round 3: 8 -> 4 steps, budget=300s
+event=step round=3 step=0 loss=1.559856 avg_loss_50=1.559856 elapsed_sec=0.1
+event=step round=3 step=20 loss=1.071742 avg_loss_50=1.179223 elapsed_sec=2.7
+event=step round=3 step=40 loss=0.993975 avg_loss_50=1.093107 elapsed_sec=5.1
+event=step round=3 step=60 loss=0.929132 avg_loss_50=0.995257 elapsed_sec=7.5
+event=step round=3 step=80 loss=0.901869 avg_loss_50=0.941532 elapsed_sec=9.9
+event=step round=3 step=100 loss=0.853162 avg_loss_50=0.907163 elapsed_sec=12.3
+event=step round=3 step=120 loss=0.839117 avg_loss_50=0.888403 elapsed_sec=14.8
+event=step round=3 step=140 loss=0.878664 avg_loss_50=0.884467 elapsed_sec=17.4
+event=step round=3 step=160 loss=0.834972 avg_loss_50=0.875184 elapsed_sec=20.0
+event=step round=3 step=180 loss=0.846036 avg_loss_50=0.862284 elapsed_sec=22.3
+event=step round=3 step=200 loss=0.867245 avg_loss_50=0.851131 elapsed_sec=24.7
+event=step round=3 step=220 loss=0.821671 avg_loss_50=0.844434 elapsed_sec=27.2
+event=step round=3 step=240 loss=0.829195 avg_loss_50=0.837611 elapsed_sec=29.8
+event=step round=3 step=260 loss=0.841194 avg_loss_50=0.83485 elapsed_sec=32.4
+event=step round=3 step=280 loss=0.815584 avg_loss_50=0.825822 elapsed_sec=35.0
+event=step round=3 step=300 loss=0.807017 avg_loss_50=0.815988 elapsed_sec=37.5
+event=step round=3 step=320 loss=0.773667 avg_loss_50=0.808198 elapsed_sec=39.9
+event=step round=3 step=340 loss=0.777526 avg_loss_50=0.807639 elapsed_sec=42.3
+event=step round=3 step=360 loss=0.819381 avg_loss_50=0.800884 elapsed_sec=44.8
+event=step round=3 step=380 loss=0.80621 avg_loss_50=0.798194 elapsed_sec=47.4
+event=step round=3 step=400 loss=0.793967 avg_loss_50=0.807389 elapsed_sec=50.0
+event=step round=3 step=420 loss=0.784105 avg_loss_50=0.804135 elapsed_sec=52.3
+event=step round=3 step=440 loss=0.800948 avg_loss_50=0.79941 elapsed_sec=54.8
+event=step round=3 step=460 loss=0.847284 avg_loss_50=0.791214 elapsed_sec=57.2
+event=step round=3 step=480 loss=0.754478 avg_loss_50=0.781342 elapsed_sec=59.6
+event=step round=3 step=500 loss=0.748441 avg_loss_50=0.779428 elapsed_sec=62.0
+event=step round=3 step=520 loss=0.71612 avg_loss_50=0.775315 elapsed_sec=64.3
+event=step round=3 step=540 loss=0.767544 avg_loss_50=0.780068 elapsed_sec=66.8
+event=step round=3 step=560 loss=0.718691 avg_loss_50=0.77478 elapsed_sec=69.1
+event=step round=3 step=580 loss=0.750564 avg_loss_50=0.76603 elapsed_sec=71.5
+event=step round=3 step=600 loss=0.725743 avg_loss_50=0.76221 elapsed_sec=74.0
+event=step round=3 step=620 loss=0.758584 avg_loss_50=0.763304 elapsed_sec=76.5
+event=step round=3 step=640 loss=0.746865 avg_loss_50=0.760163 elapsed_sec=78.8
+event=step round=3 step=660 loss=0.781535 avg_loss_50=0.757548 elapsed_sec=81.1
+event=step round=3 step=680 loss=0.747501 avg_loss_50=0.748644 elapsed_sec=83.7
+event=step round=3 step=700 loss=0.74549 avg_loss_50=0.750533 elapsed_sec=86.2
+event=step round=3 step=720 loss=0.704437 avg_loss_50=0.749184 elapsed_sec=88.7
+event=step round=3 step=740 loss=0.750487 avg_loss_50=0.744256 elapsed_sec=91.2
+event=step round=3 step=760 loss=0.788612 avg_loss_50=0.739035 elapsed_sec=93.7
+event=step round=3 step=780 loss=0.737595 avg_loss_50=0.741453 elapsed_sec=96.1
+event=step round=3 step=800 loss=0.75226 avg_loss_50=0.744459 elapsed_sec=98.6
+event=step round=3 step=820 loss=0.71231 avg_loss_50=0.738675 elapsed_sec=101.1
+event=step round=3 step=840 loss=0.723069 avg_loss_50=0.737 elapsed_sec=103.5
+event=step round=3 step=860 loss=0.707241 avg_loss_50=0.731772 elapsed_sec=106.1
+event=step round=3 step=880 loss=0.75278 avg_loss_50=0.72907 elapsed_sec=108.7
+event=step round=3 step=900 loss=0.66775 avg_loss_50=0.726366 elapsed_sec=111.2
+event=step round=3 step=920 loss=0.73597 avg_loss_50=0.728714 elapsed_sec=113.8
+event=step round=3 step=940 loss=0.75013 avg_loss_50=0.730834 elapsed_sec=116.4
+event=step round=3 step=960 loss=0.658359 avg_loss_50=0.719472 elapsed_sec=119.0
+event=step round=3 step=980 loss=0.706047 avg_loss_50=0.712411 elapsed_sec=121.5
+event=step round=3 step=1000 loss=0.699203 avg_loss_50=0.711898 elapsed_sec=124.1
+event=step round=3 step=1020 loss=0.703544 avg_loss_50=0.713392 elapsed_sec=126.5
+event=step round=3 step=1040 loss=0.726439 avg_loss_50=0.711546 elapsed_sec=128.8
+event=step round=3 step=1060 loss=0.741956 avg_loss_50=0.718471 elapsed_sec=131.0
+event=step round=3 step=1080 loss=0.745249 avg_loss_50=0.716177 elapsed_sec=133.4
+event=step round=3 step=1100 loss=0.728681 avg_loss_50=0.710611 elapsed_sec=136.0
+event=step round=3 step=1120 loss=0.708749 avg_loss_50=0.706256 elapsed_sec=138.5
+event=step round=3 step=1140 loss=0.698042 avg_loss_50=0.705767 elapsed_sec=140.9
+event=step round=3 step=1160 loss=0.698591 avg_loss_50=0.703533 elapsed_sec=143.4
+event=step round=3 step=1180 loss=0.70173 avg_loss_50=0.702157 elapsed_sec=146.0
+event=step round=3 step=1200 loss=0.733395 avg_loss_50=0.705348 elapsed_sec=148.4
+event=step round=3 step=1220 loss=0.717306 avg_loss_50=0.704156 elapsed_sec=150.9
+event=step round=3 step=1240 loss=0.710722 avg_loss_50=0.705281 elapsed_sec=153.1
+event=step round=3 step=1260 loss=0.692343 avg_loss_50=0.700136 elapsed_sec=155.7
+event=step round=3 step=1280 loss=0.681479 avg_loss_50=0.702657 elapsed_sec=158.2
+event=step round=3 step=1300 loss=0.790609 avg_loss_50=0.707541 elapsed_sec=160.6
+event=step round=3 step=1320 loss=0.726218 avg_loss_50=0.70373 elapsed_sec=162.9
+event=step round=3 step=1340 loss=0.680442 avg_loss_50=0.699324 elapsed_sec=165.4
+event=step round=3 step=1360 loss=0.648397 avg_loss_50=0.691825 elapsed_sec=167.9
+event=step round=3 step=1380 loss=0.713481 avg_loss_50=0.692201 elapsed_sec=170.2
+event=step round=3 step=1400 loss=0.686934 avg_loss_50=0.691569 elapsed_sec=172.7
+event=step round=3 step=1420 loss=0.684021 avg_loss_50=0.695203 elapsed_sec=175.2
+event=step round=3 step=1440 loss=0.699754 avg_loss_50=0.693249 elapsed_sec=177.7
+event=step round=3 step=1460 loss=0.6725 avg_loss_50=0.695214 elapsed_sec=180.2
+event=step round=3 step=1480 loss=0.708711 avg_loss_50=0.688223 elapsed_sec=182.6
+event=step round=3 step=1500 loss=0.630873 avg_loss_50=0.692433 elapsed_sec=185.1
+event=step round=3 step=1520 loss=0.684048 avg_loss_50=0.687158 elapsed_sec=187.6
+event=step round=3 step=1540 loss=0.691934 avg_loss_50=0.684677 elapsed_sec=190.1
+event=step round=3 step=1560 loss=0.680608 avg_loss_50=0.680208 elapsed_sec=192.6
+event=step round=3 step=1580 loss=0.673664 avg_loss_50=0.677425 elapsed_sec=195.1
+event=step round=3 step=1600 loss=0.690406 avg_loss_50=0.681998 elapsed_sec=197.4
+event=step round=3 step=1620 loss=0.712474 avg_loss_50=0.681317 elapsed_sec=199.9
+event=step round=3 step=1640 loss=0.678273 avg_loss_50=0.682875 elapsed_sec=202.4
+event=step round=3 step=1660 loss=0.68013 avg_loss_50=0.679183 elapsed_sec=204.9
+event=step round=3 step=1680 loss=0.679305 avg_loss_50=0.673032 elapsed_sec=207.3
+event=step round=3 step=1700 loss=0.695756 avg_loss_50=0.675377 elapsed_sec=209.7
+event=step round=3 step=1720 loss=0.701001 avg_loss_50=0.675968 elapsed_sec=212.0
+event=step round=3 step=1740 loss=0.733597 avg_loss_50=0.677155 elapsed_sec=214.6
+event=step round=3 step=1760 loss=0.690822 avg_loss_50=0.675248 elapsed_sec=217.0
+event=step round=3 step=1780 loss=0.699371 avg_loss_50=0.674327 elapsed_sec=219.5
+event=step round=3 step=1800 loss=0.699467 avg_loss_50=0.674572 elapsed_sec=222.0
+event=step round=3 step=1820 loss=0.687923 avg_loss_50=0.67569 elapsed_sec=224.5
+event=step round=3 step=1840 loss=0.642455 avg_loss_50=0.67171 elapsed_sec=227.2
+event=step round=3 step=1860 loss=0.676785 avg_loss_50=0.668412 elapsed_sec=229.7
+event=step round=3 step=1880 loss=0.673107 avg_loss_50=0.667934 elapsed_sec=232.3
+event=step round=3 step=1900 loss=0.639839 avg_loss_50=0.666909 elapsed_sec=234.8
+event=step round=3 step=1920 loss=0.637452 avg_loss_50=0.664266 elapsed_sec=237.4
+event=step round=3 step=1940 loss=0.619849 avg_loss_50=0.664416 elapsed_sec=240.1
+event=step round=3 step=1960 loss=0.649688 avg_loss_50=0.666297 elapsed_sec=242.5
+event=step round=3 step=1980 loss=0.699186 avg_loss_50=0.665181 elapsed_sec=245.1
+event=step round=3 step=2000 loss=0.6628 avg_loss_50=0.665018 elapsed_sec=247.6
+event=step round=3 step=2020 loss=0.657621 avg_loss_50=0.666762 elapsed_sec=249.9
+event=step round=3 step=2040 loss=0.683116 avg_loss_50=0.67095 elapsed_sec=252.3
+event=step round=3 step=2060 loss=0.682624 avg_loss_50=0.670113 elapsed_sec=254.7
+event=step round=3 step=2080 loss=0.614405 avg_loss_50=0.665647 elapsed_sec=257.2
+event=step round=3 step=2100 loss=0.676617 avg_loss_50=0.660776 elapsed_sec=259.5
+event=step round=3 step=2120 loss=0.648993 avg_loss_50=0.658627 elapsed_sec=261.9
+event=step round=3 step=2140 loss=0.714555 avg_loss_50=0.666557 elapsed_sec=264.5
+event=step round=3 step=2160 loss=0.685013 avg_loss_50=0.668391 elapsed_sec=267.0
+event=step round=3 step=2180 loss=0.637918 avg_loss_50=0.662722 elapsed_sec=269.6
+event=step round=3 step=2200 loss=0.628915 avg_loss_50=0.659067 elapsed_sec=272.1
+event=step round=3 step=2220 loss=0.666011 avg_loss_50=0.65634 elapsed_sec=274.9
+event=step round=3 step=2240 loss=0.657655 avg_loss_50=0.655636 elapsed_sec=277.4
+event=step round=3 step=2260 loss=0.60732 avg_loss_50=0.656303 elapsed_sec=279.9
+event=step round=3 step=2280 loss=0.664083 avg_loss_50=0.651278 elapsed_sec=282.3
+event=step round=3 step=2300 loss=0.654964 avg_loss_50=0.647483 elapsed_sec=285.0
+event=step round=3 step=2320 loss=0.683821 avg_loss_50=0.649059 elapsed_sec=287.4
+event=step round=3 step=2340 loss=0.665457 avg_loss_50=0.650976 elapsed_sec=289.8
+event=step round=3 step=2360 loss=0.630554 avg_loss_50=0.650394 elapsed_sec=292.3
+event=step round=3 step=2380 loss=0.654316 avg_loss_50=0.649485 elapsed_sec=294.6
+event=step round=3 step=2400 loss=0.692652 avg_loss_50=0.651099 elapsed_sec=297.0
+event=step round=3 step=2420 loss=0.629287 avg_loss_50=0.648196 elapsed_sec=299.5
+event=round_done round=3 steps=2425 elapsed_sec=300.0 final_avg_loss=0.649205 old_nfe=8 new_nfe=4
+[distill] arm nfe=4: {'nfe': 4, 'wall_clock_sec': 0.05479073524475098, 'wall_clock_sec_per_sample': 0.000856105238199234, 'own_quality_mean_top1_conf': 0.7817378640174866, 'own_quality_mean_entropy': 0.5779920220375061, 'trajectory_pixel_mse_vs_teacher32': 1.0575417280197144, 'trajectory_classifier_l2_vs_teacher32': 1.0298943519592285, 'trajectory_classifier_kl_vs_teacher32': 4.582474231719971, 'train_steps': 2425, 'train_elapsed_sec': 300.0055994987488, 'train_final_avg_loss': 0.6492047333717346}
+[distill] round 4: 4 -> 2 steps, budget=300s
+event=step round=4 step=0 loss=1.873696 avg_loss_50=1.873696 elapsed_sec=0.1
+event=step round=4 step=20 loss=0.52738 avg_loss_50=0.710811 elapsed_sec=2.1
+event=step round=4 step=40 loss=0.430478 avg_loss_50=0.605183 elapsed_sec=3.9
+event=step round=4 step=60 loss=0.44587 avg_loss_50=0.496142 elapsed_sec=5.8
+event=step round=4 step=80 loss=0.420955 avg_loss_50=0.459312 elapsed_sec=7.7
+event=step round=4 step=100 loss=0.413133 avg_loss_50=0.444008 elapsed_sec=9.6
+event=step round=4 step=120 loss=0.387574 avg_loss_50=0.431992 elapsed_sec=11.3
+event=step round=4 step=140 loss=0.425262 avg_loss_50=0.417873 elapsed_sec=13.1
+event=step round=4 step=160 loss=0.38753 avg_loss_50=0.405894 elapsed_sec=15.0
+event=step round=4 step=180 loss=0.404182 avg_loss_50=0.398813 elapsed_sec=16.8
+event=step round=4 step=200 loss=0.390816 avg_loss_50=0.393612 elapsed_sec=18.6
+event=step round=4 step=220 loss=0.399215 avg_loss_50=0.391035 elapsed_sec=20.5
+event=step round=4 step=240 loss=0.364901 avg_loss_50=0.38555 elapsed_sec=22.4
+event=step round=4 step=260 loss=0.398047 avg_loss_50=0.383222 elapsed_sec=24.3
+event=step round=4 step=280 loss=0.373574 avg_loss_50=0.378238 elapsed_sec=26.2
+event=step round=4 step=300 loss=0.353622 avg_loss_50=0.373882 elapsed_sec=28.0
+event=step round=4 step=320 loss=0.386436 avg_loss_50=0.370373 elapsed_sec=29.8
+event=step round=4 step=340 loss=0.375822 avg_loss_50=0.367479 elapsed_sec=31.7
+event=step round=4 step=360 loss=0.332425 avg_loss_50=0.365974 elapsed_sec=33.5
+event=step round=4 step=380 loss=0.369452 avg_loss_50=0.364129 elapsed_sec=35.4
+event=step round=4 step=400 loss=0.3676 avg_loss_50=0.360062 elapsed_sec=37.2
+event=step round=4 step=420 loss=0.366862 avg_loss_50=0.35827 elapsed_sec=39.1
+event=step round=4 step=440 loss=0.344021 avg_loss_50=0.354742 elapsed_sec=40.8
+event=step round=4 step=460 loss=0.347501 avg_loss_50=0.350726 elapsed_sec=42.6
+event=step round=4 step=480 loss=0.345168 avg_loss_50=0.347212 elapsed_sec=44.4
+event=step round=4 step=500 loss=0.348327 avg_loss_50=0.343705 elapsed_sec=46.3
+event=step round=4 step=520 loss=0.332436 avg_loss_50=0.339652 elapsed_sec=48.2
+event=step round=4 step=540 loss=0.324793 avg_loss_50=0.33678 elapsed_sec=49.9
+event=step round=4 step=560 loss=0.353357 avg_loss_50=0.337024 elapsed_sec=51.6
+event=step round=4 step=580 loss=0.333761 avg_loss_50=0.336189 elapsed_sec=53.3
+event=step round=4 step=600 loss=0.339278 avg_loss_50=0.337155 elapsed_sec=55.2
+event=step round=4 step=620 loss=0.328371 avg_loss_50=0.333162 elapsed_sec=57.1
+event=step round=4 step=640 loss=0.335506 avg_loss_50=0.33175 elapsed_sec=58.9
+event=step round=4 step=660 loss=0.310383 avg_loss_50=0.329342 elapsed_sec=60.6
+event=step round=4 step=680 loss=0.323059 avg_loss_50=0.330559 elapsed_sec=62.4
+event=step round=4 step=700 loss=0.320219 avg_loss_50=0.330497 elapsed_sec=64.2
+event=step round=4 step=720 loss=0.328007 avg_loss_50=0.32801 elapsed_sec=66.2
+event=step round=4 step=740 loss=0.355003 avg_loss_50=0.324942 elapsed_sec=68.0
+event=step round=4 step=760 loss=0.32282 avg_loss_50=0.320151 elapsed_sec=69.8
+event=step round=4 step=780 loss=0.337006 avg_loss_50=0.321032 elapsed_sec=71.6
+event=step round=4 step=800 loss=0.317926 avg_loss_50=0.31781 elapsed_sec=73.3
+event=step round=4 step=820 loss=0.290654 avg_loss_50=0.316784 elapsed_sec=75.3
+event=step round=4 step=840 loss=0.308525 avg_loss_50=0.313301 elapsed_sec=77.1
+event=step round=4 step=860 loss=0.306752 avg_loss_50=0.311855 elapsed_sec=78.9
+event=step round=4 step=880 loss=0.322975 avg_loss_50=0.312327 elapsed_sec=80.6
+event=step round=4 step=900 loss=0.304797 avg_loss_50=0.313737 elapsed_sec=82.4
+event=step round=4 step=920 loss=0.301167 avg_loss_50=0.312462 elapsed_sec=84.1
+event=step round=4 step=940 loss=0.331196 avg_loss_50=0.313297 elapsed_sec=85.9
+event=step round=4 step=960 loss=0.312751 avg_loss_50=0.313159 elapsed_sec=87.7
+event=step round=4 step=980 loss=0.305611 avg_loss_50=0.311039 elapsed_sec=89.6
+event=step round=4 step=1000 loss=0.311261 avg_loss_50=0.309933 elapsed_sec=91.5
+event=step round=4 step=1020 loss=0.311505 avg_loss_50=0.308194 elapsed_sec=93.4
+event=step round=4 step=1040 loss=0.31718 avg_loss_50=0.307356 elapsed_sec=95.5
+event=step round=4 step=1060 loss=0.292467 avg_loss_50=0.306197 elapsed_sec=97.3
+event=step round=4 step=1080 loss=0.322557 avg_loss_50=0.306374 elapsed_sec=99.2
+event=step round=4 step=1100 loss=0.301591 avg_loss_50=0.307016 elapsed_sec=101.0
+event=step round=4 step=1120 loss=0.30703 avg_loss_50=0.304866 elapsed_sec=102.9
+event=step round=4 step=1140 loss=0.301901 avg_loss_50=0.30326 elapsed_sec=104.8
+event=step round=4 step=1160 loss=0.300554 avg_loss_50=0.30238 elapsed_sec=106.7
+event=step round=4 step=1180 loss=0.301595 avg_loss_50=0.303538 elapsed_sec=108.7
+event=step round=4 step=1200 loss=0.303908 avg_loss_50=0.30351 elapsed_sec=110.6
+event=step round=4 step=1220 loss=0.314622 avg_loss_50=0.302687 elapsed_sec=112.5
+event=step round=4 step=1240 loss=0.309897 avg_loss_50=0.301447 elapsed_sec=114.4
+event=step round=4 step=1260 loss=0.284565 avg_loss_50=0.297538 elapsed_sec=116.3
+event=step round=4 step=1280 loss=0.331851 avg_loss_50=0.297445 elapsed_sec=118.3
+event=step round=4 step=1300 loss=0.291059 avg_loss_50=0.296046 elapsed_sec=120.2
+event=step round=4 step=1320 loss=0.289574 avg_loss_50=0.296915 elapsed_sec=122.1
+event=step round=4 step=1340 loss=0.290192 avg_loss_50=0.295952 elapsed_sec=124.1
+event=step round=4 step=1360 loss=0.296877 avg_loss_50=0.296401 elapsed_sec=126.0
+event=step round=4 step=1380 loss=0.304285 avg_loss_50=0.296114 elapsed_sec=127.9
+event=step round=4 step=1400 loss=0.302609 avg_loss_50=0.294468 elapsed_sec=129.7
+event=step round=4 step=1420 loss=0.280514 avg_loss_50=0.291598 elapsed_sec=131.5
+event=step round=4 step=1440 loss=0.279923 avg_loss_50=0.293035 elapsed_sec=133.4
+event=step round=4 step=1460 loss=0.301666 avg_loss_50=0.29628 elapsed_sec=135.2
+event=step round=4 step=1480 loss=0.299547 avg_loss_50=0.296484 elapsed_sec=137.1
+event=step round=4 step=1500 loss=0.278124 avg_loss_50=0.294031 elapsed_sec=138.8
+event=step round=4 step=1520 loss=0.282793 avg_loss_50=0.291419 elapsed_sec=140.5
+event=step round=4 step=1540 loss=0.276273 avg_loss_50=0.291367 elapsed_sec=142.2
+event=step round=4 step=1560 loss=0.290553 avg_loss_50=0.294148 elapsed_sec=143.9
+event=step round=4 step=1580 loss=0.286974 avg_loss_50=0.293816 elapsed_sec=145.8
+event=step round=4 step=1600 loss=0.28615 avg_loss_50=0.293284 elapsed_sec=147.6
+event=step round=4 step=1620 loss=0.281654 avg_loss_50=0.291688 elapsed_sec=149.4
+event=step round=4 step=1640 loss=0.288349 avg_loss_50=0.290252 elapsed_sec=151.2
+event=step round=4 step=1660 loss=0.277725 avg_loss_50=0.28782 elapsed_sec=153.0
+event=step round=4 step=1680 loss=0.28065 avg_loss_50=0.288085 elapsed_sec=154.9
+event=step round=4 step=1700 loss=0.303397 avg_loss_50=0.286284 elapsed_sec=156.8
+event=step round=4 step=1720 loss=0.294557 avg_loss_50=0.287461 elapsed_sec=158.7
+event=step round=4 step=1740 loss=0.269476 avg_loss_50=0.286066 elapsed_sec=160.6
+event=step round=4 step=1760 loss=0.285336 avg_loss_50=0.285119 elapsed_sec=162.4
+event=step round=4 step=1780 loss=0.297017 avg_loss_50=0.285744 elapsed_sec=164.2
+event=step round=4 step=1800 loss=0.269046 avg_loss_50=0.285723 elapsed_sec=166.0
+event=step round=4 step=1820 loss=0.290787 avg_loss_50=0.285408 elapsed_sec=167.8
+event=step round=4 step=1840 loss=0.280864 avg_loss_50=0.283402 elapsed_sec=169.5
+event=step round=4 step=1860 loss=0.288051 avg_loss_50=0.281909 elapsed_sec=171.3
+event=step round=4 step=1880 loss=0.289252 avg_loss_50=0.28263 elapsed_sec=173.1
+event=step round=4 step=1900 loss=0.285992 avg_loss_50=0.285357 elapsed_sec=175.1
+event=step round=4 step=1920 loss=0.2691 avg_loss_50=0.286123 elapsed_sec=177.1
+event=step round=4 step=1940 loss=0.287845 avg_loss_50=0.284624 elapsed_sec=179.2
+event=step round=4 step=1960 loss=0.276173 avg_loss_50=0.281303 elapsed_sec=181.2
+event=step round=4 step=1980 loss=0.272715 avg_loss_50=0.27925 elapsed_sec=183.1
+event=step round=4 step=2000 loss=0.276155 avg_loss_50=0.27899 elapsed_sec=184.8
+event=step round=4 step=2020 loss=0.258729 avg_loss_50=0.281331 elapsed_sec=186.6
+event=step round=4 step=2040 loss=0.276983 avg_loss_50=0.28308 elapsed_sec=188.4
+event=step round=4 step=2060 loss=0.292797 avg_loss_50=0.283034 elapsed_sec=190.2
+event=step round=4 step=2080 loss=0.275561 avg_loss_50=0.281731 elapsed_sec=192.1
+event=step round=4 step=2100 loss=0.271581 avg_loss_50=0.28069 elapsed_sec=193.9
+event=step round=4 step=2120 loss=0.279926 avg_loss_50=0.279932 elapsed_sec=195.8
+event=step round=4 step=2140 loss=0.296002 avg_loss_50=0.277844 elapsed_sec=197.6
+event=step round=4 step=2160 loss=0.272662 avg_loss_50=0.277536 elapsed_sec=199.3
+event=step round=4 step=2180 loss=0.271367 avg_loss_50=0.278448 elapsed_sec=201.1
+event=step round=4 step=2200 loss=0.279943 avg_loss_50=0.27878 elapsed_sec=203.0
+event=step round=4 step=2220 loss=0.28326 avg_loss_50=0.277351 elapsed_sec=204.8
+event=step round=4 step=2240 loss=0.277365 avg_loss_50=0.278297 elapsed_sec=206.7
+event=step round=4 step=2260 loss=0.25771 avg_loss_50=0.277885 elapsed_sec=208.5
+event=step round=4 step=2280 loss=0.276628 avg_loss_50=0.276974 elapsed_sec=210.2
+event=step round=4 step=2300 loss=0.263862 avg_loss_50=0.276654 elapsed_sec=212.1
+event=step round=4 step=2320 loss=0.255843 avg_loss_50=0.276992 elapsed_sec=213.8
+event=step round=4 step=2340 loss=0.273909 avg_loss_50=0.278068 elapsed_sec=215.7
+event=step round=4 step=2360 loss=0.283753 avg_loss_50=0.27827 elapsed_sec=217.5
+event=step round=4 step=2380 loss=0.281603 avg_loss_50=0.275974 elapsed_sec=219.4
+event=step round=4 step=2400 loss=0.267762 avg_loss_50=0.276494 elapsed_sec=221.2
+event=step round=4 step=2420 loss=0.289762 avg_loss_50=0.275407 elapsed_sec=223.1
+event=step round=4 step=2440 loss=0.26653 avg_loss_50=0.273869 elapsed_sec=224.9
+event=step round=4 step=2460 loss=0.271787 avg_loss_50=0.274049 elapsed_sec=226.8
+event=step round=4 step=2480 loss=0.268736 avg_loss_50=0.276469 elapsed_sec=228.6
+event=step round=4 step=2500 loss=0.276965 avg_loss_50=0.275554 elapsed_sec=230.3
+event=step round=4 step=2520 loss=0.260754 avg_loss_50=0.2728 elapsed_sec=232.1
+event=step round=4 step=2540 loss=0.268672 avg_loss_50=0.271281 elapsed_sec=233.9
+event=step round=4 step=2560 loss=0.26766 avg_loss_50=0.271346 elapsed_sec=235.9
+event=step round=4 step=2580 loss=0.267954 avg_loss_50=0.272521 elapsed_sec=237.7
+event=step round=4 step=2600 loss=0.280993 avg_loss_50=0.274607 elapsed_sec=239.6
+event=step round=4 step=2620 loss=0.278986 avg_loss_50=0.273283 elapsed_sec=241.6
+event=step round=4 step=2640 loss=0.27958 avg_loss_50=0.273198 elapsed_sec=243.5
+event=step round=4 step=2660 loss=0.258434 avg_loss_50=0.271082 elapsed_sec=245.3
+event=step round=4 step=2680 loss=0.271428 avg_loss_50=0.271032 elapsed_sec=247.2
+event=step round=4 step=2700 loss=0.259394 avg_loss_50=0.271285 elapsed_sec=249.0
+event=step round=4 step=2720 loss=0.265865 avg_loss_50=0.272811 elapsed_sec=250.8
+event=step round=4 step=2740 loss=0.254705 avg_loss_50=0.271339 elapsed_sec=252.5
+event=step round=4 step=2760 loss=0.254002 avg_loss_50=0.269932 elapsed_sec=254.4
+event=step round=4 step=2780 loss=0.274574 avg_loss_50=0.270652 elapsed_sec=256.3
+event=step round=4 step=2800 loss=0.260643 avg_loss_50=0.270479 elapsed_sec=258.1
+event=step round=4 step=2820 loss=0.279889 avg_loss_50=0.269457 elapsed_sec=259.8
+event=step round=4 step=2840 loss=0.26161 avg_loss_50=0.269853 elapsed_sec=261.6
+event=step round=4 step=2860 loss=0.267049 avg_loss_50=0.270544 elapsed_sec=263.3
+event=step round=4 step=2880 loss=0.279162 avg_loss_50=0.270945 elapsed_sec=265.2
+event=step round=4 step=2900 loss=0.277507 avg_loss_50=0.270338 elapsed_sec=267.0
+event=step round=4 step=2920 loss=0.264504 avg_loss_50=0.269439 elapsed_sec=268.8
+event=step round=4 step=2940 loss=0.265339 avg_loss_50=0.26809 elapsed_sec=270.6
+event=step round=4 step=2960 loss=0.268669 avg_loss_50=0.267199 elapsed_sec=272.4
+event=step round=4 step=2980 loss=0.256749 avg_loss_50=0.266789 elapsed_sec=274.2
+event=step round=4 step=3000 loss=0.257964 avg_loss_50=0.26491 elapsed_sec=276.0
+event=step round=4 step=3020 loss=0.270546 avg_loss_50=0.264136 elapsed_sec=277.8
+event=step round=4 step=3040 loss=0.264004 avg_loss_50=0.265073 elapsed_sec=279.6
+event=step round=4 step=3060 loss=0.275031 avg_loss_50=0.265769 elapsed_sec=281.4
+event=step round=4 step=3080 loss=0.254551 avg_loss_50=0.266001 elapsed_sec=283.2
+event=step round=4 step=3100 loss=0.280733 avg_loss_50=0.266194 elapsed_sec=285.0
+event=step round=4 step=3120 loss=0.262653 avg_loss_50=0.265269 elapsed_sec=286.8
+event=step round=4 step=3140 loss=0.258992 avg_loss_50=0.264922 elapsed_sec=288.6
+event=step round=4 step=3160 loss=0.27501 avg_loss_50=0.264658 elapsed_sec=290.5
+event=step round=4 step=3180 loss=0.288303 avg_loss_50=0.26626 elapsed_sec=292.3
+event=step round=4 step=3200 loss=0.253989 avg_loss_50=0.265974 elapsed_sec=294.1
+event=step round=4 step=3220 loss=0.25483 avg_loss_50=0.266463 elapsed_sec=296.1
+event=step round=4 step=3240 loss=0.268953 avg_loss_50=0.26602 elapsed_sec=297.9
+event=step round=4 step=3260 loss=0.256525 avg_loss_50=0.264523 elapsed_sec=299.9
+event=round_done round=4 steps=3262 elapsed_sec=300.0 final_avg_loss=0.264796 old_nfe=4 new_nfe=2
+[distill] arm nfe=2: {'nfe': 2, 'wall_clock_sec': 0.03338313102722168, 'wall_clock_sec_per_sample': 0.0005216114223003387, 'own_quality_mean_top1_conf': 0.7764661312103271, 'own_quality_mean_entropy': 0.6188352704048157, 'trajectory_pixel_mse_vs_teacher32': 0.6852405667304993, 'trajectory_classifier_l2_vs_teacher32': 0.7347379922866821, 'trajectory_classifier_kl_vs_teacher32': 2.4989683628082275, 'train_steps': 3262, 'train_elapsed_sec': 300.0139241218567, 'train_final_avg_loss': 0.2647957807779312}
+[distill] round 5: 2 -> 1 steps, budget=300s
+event=step round=5 step=0 loss=2.004849 avg_loss_50=2.004849 elapsed_sec=0.1
+event=step round=5 step=20 loss=0.38806 avg_loss_50=0.646003 elapsed_sec=1.7
+event=step round=5 step=40 loss=0.33958 avg_loss_50=0.508712 elapsed_sec=3.2
+event=step round=5 step=60 loss=0.301278 avg_loss_50=0.360468 elapsed_sec=4.8
+event=step round=5 step=80 loss=0.294383 avg_loss_50=0.319813 elapsed_sec=6.4
+event=step round=5 step=100 loss=0.276562 avg_loss_50=0.294921 elapsed_sec=8.0
+event=step round=5 step=120 loss=0.270902 avg_loss_50=0.280842 elapsed_sec=9.5
+event=step round=5 step=140 loss=0.25091 avg_loss_50=0.269739 elapsed_sec=11.0
+event=step round=5 step=160 loss=0.245321 avg_loss_50=0.259857 elapsed_sec=12.4
+event=step round=5 step=180 loss=0.234764 avg_loss_50=0.249149 elapsed_sec=14.0
+event=step round=5 step=200 loss=0.232758 avg_loss_50=0.23993 elapsed_sec=15.5
+event=step round=5 step=220 loss=0.231074 avg_loss_50=0.233037 elapsed_sec=17.1
+event=step round=5 step=240 loss=0.215946 avg_loss_50=0.226604 elapsed_sec=18.5
+event=step round=5 step=260 loss=0.220652 avg_loss_50=0.220745 elapsed_sec=20.0
+event=step round=5 step=280 loss=0.205097 avg_loss_50=0.215687 elapsed_sec=21.6
+event=step round=5 step=300 loss=0.206972 avg_loss_50=0.212612 elapsed_sec=23.0
+event=step round=5 step=320 loss=0.203902 avg_loss_50=0.208318 elapsed_sec=24.5
+event=step round=5 step=340 loss=0.198611 avg_loss_50=0.204995 elapsed_sec=26.1
+event=step round=5 step=360 loss=0.201231 avg_loss_50=0.201849 elapsed_sec=27.6
+event=step round=5 step=380 loss=0.197757 avg_loss_50=0.199782 elapsed_sec=29.1
+event=step round=5 step=400 loss=0.199936 avg_loss_50=0.196528 elapsed_sec=30.7
+event=step round=5 step=420 loss=0.189196 avg_loss_50=0.192929 elapsed_sec=32.2
+event=step round=5 step=440 loss=0.185559 avg_loss_50=0.190267 elapsed_sec=33.7
+event=step round=5 step=460 loss=0.189319 avg_loss_50=0.189134 elapsed_sec=35.2
+event=step round=5 step=480 loss=0.18657 avg_loss_50=0.187377 elapsed_sec=36.9
+event=step round=5 step=500 loss=0.180455 avg_loss_50=0.185764 elapsed_sec=38.4
+event=step round=5 step=520 loss=0.185999 avg_loss_50=0.18428 elapsed_sec=39.9
+event=step round=5 step=540 loss=0.180451 avg_loss_50=0.182405 elapsed_sec=41.3
+event=step round=5 step=560 loss=0.183268 avg_loss_50=0.179919 elapsed_sec=42.9
+event=step round=5 step=580 loss=0.172871 avg_loss_50=0.177681 elapsed_sec=44.5
+event=step round=5 step=600 loss=0.175019 avg_loss_50=0.176162 elapsed_sec=46.0
+event=step round=5 step=620 loss=0.17659 avg_loss_50=0.174353 elapsed_sec=47.5
+event=step round=5 step=640 loss=0.168677 avg_loss_50=0.173285 elapsed_sec=48.9
+event=step round=5 step=660 loss=0.1681 avg_loss_50=0.173034 elapsed_sec=50.4
+event=step round=5 step=680 loss=0.168606 avg_loss_50=0.171945 elapsed_sec=52.0
+event=step round=5 step=700 loss=0.170926 avg_loss_50=0.170951 elapsed_sec=53.5
+event=step round=5 step=720 loss=0.167082 avg_loss_50=0.16986 elapsed_sec=55.1
+event=step round=5 step=740 loss=0.169286 avg_loss_50=0.168727 elapsed_sec=56.7
+event=step round=5 step=760 loss=0.158709 avg_loss_50=0.166353 elapsed_sec=58.2
+event=step round=5 step=780 loss=0.162627 avg_loss_50=0.164478 elapsed_sec=59.7
+event=step round=5 step=800 loss=0.165697 avg_loss_50=0.163355 elapsed_sec=61.2
+event=step round=5 step=820 loss=0.167479 avg_loss_50=0.16265 elapsed_sec=62.7
+event=step round=5 step=840 loss=0.15926 avg_loss_50=0.161977 elapsed_sec=64.2
+event=step round=5 step=860 loss=0.164373 avg_loss_50=0.160352 elapsed_sec=65.8
+event=step round=5 step=880 loss=0.160906 avg_loss_50=0.159267 elapsed_sec=67.2
+event=step round=5 step=900 loss=0.154194 avg_loss_50=0.158384 elapsed_sec=68.7
+event=step round=5 step=920 loss=0.152073 avg_loss_50=0.157469 elapsed_sec=70.1
+event=step round=5 step=940 loss=0.158959 avg_loss_50=0.156297 elapsed_sec=71.6
+event=step round=5 step=960 loss=0.152828 avg_loss_50=0.155588 elapsed_sec=73.0
+event=step round=5 step=980 loss=0.154867 avg_loss_50=0.155317 elapsed_sec=74.4
+event=step round=5 step=1000 loss=0.155656 avg_loss_50=0.154691 elapsed_sec=75.8
+event=step round=5 step=1020 loss=0.158903 avg_loss_50=0.154163 elapsed_sec=77.3
+event=step round=5 step=1040 loss=0.147924 avg_loss_50=0.152883 elapsed_sec=78.7
+event=step round=5 step=1060 loss=0.149083 avg_loss_50=0.151509 elapsed_sec=80.1
+event=step round=5 step=1080 loss=0.147124 avg_loss_50=0.151417 elapsed_sec=81.5
+event=step round=5 step=1100 loss=0.152798 avg_loss_50=0.151 elapsed_sec=83.0
+event=step round=5 step=1120 loss=0.151886 avg_loss_50=0.150346 elapsed_sec=84.5
+event=step round=5 step=1140 loss=0.148921 avg_loss_50=0.149206 elapsed_sec=86.1
+event=step round=5 step=1160 loss=0.146657 avg_loss_50=0.148266 elapsed_sec=87.5
+event=step round=5 step=1180 loss=0.156694 avg_loss_50=0.147647 elapsed_sec=89.1
+event=step round=5 step=1200 loss=0.14775 avg_loss_50=0.146832 elapsed_sec=90.8
+event=step round=5 step=1220 loss=0.148903 avg_loss_50=0.14639 elapsed_sec=92.4
+event=step round=5 step=1240 loss=0.14312 avg_loss_50=0.146771 elapsed_sec=93.9
+event=step round=5 step=1260 loss=0.145354 avg_loss_50=0.146445 elapsed_sec=95.4
+event=step round=5 step=1280 loss=0.14195 avg_loss_50=0.145073 elapsed_sec=97.0
+event=step round=5 step=1300 loss=0.140115 avg_loss_50=0.144348 elapsed_sec=98.5
+event=step round=5 step=1320 loss=0.140833 avg_loss_50=0.144233 elapsed_sec=100.0
+event=step round=5 step=1340 loss=0.145189 avg_loss_50=0.144089 elapsed_sec=101.4
+event=step round=5 step=1360 loss=0.139932 avg_loss_50=0.143468 elapsed_sec=102.8
+event=step round=5 step=1380 loss=0.142049 avg_loss_50=0.142881 elapsed_sec=104.2
+event=step round=5 step=1400 loss=0.144244 avg_loss_50=0.141544 elapsed_sec=105.8
+event=step round=5 step=1420 loss=0.140739 avg_loss_50=0.140341 elapsed_sec=107.4
+event=step round=5 step=1440 loss=0.143311 avg_loss_50=0.140155 elapsed_sec=108.9
+event=step round=5 step=1460 loss=0.139424 avg_loss_50=0.139594 elapsed_sec=110.3
+event=step round=5 step=1480 loss=0.141197 avg_loss_50=0.139709 elapsed_sec=111.9
+event=step round=5 step=1500 loss=0.136463 avg_loss_50=0.139437 elapsed_sec=113.4
+event=step round=5 step=1520 loss=0.14264 avg_loss_50=0.139215 elapsed_sec=115.1
+event=step round=5 step=1540 loss=0.140573 avg_loss_50=0.139854 elapsed_sec=116.7
+event=step round=5 step=1560 loss=0.143351 avg_loss_50=0.138801 elapsed_sec=118.2
+event=step round=5 step=1580 loss=0.138507 avg_loss_50=0.138176 elapsed_sec=119.7
+event=step round=5 step=1600 loss=0.136696 avg_loss_50=0.137596 elapsed_sec=121.3
+event=step round=5 step=1620 loss=0.134546 avg_loss_50=0.136949 elapsed_sec=122.8
+event=step round=5 step=1640 loss=0.135385 avg_loss_50=0.136161 elapsed_sec=124.4
+event=step round=5 step=1660 loss=0.144878 avg_loss_50=0.135966 elapsed_sec=126.0
+event=step round=5 step=1680 loss=0.132443 avg_loss_50=0.135682 elapsed_sec=127.4
+event=step round=5 step=1700 loss=0.135107 avg_loss_50=0.135222 elapsed_sec=129.0
+event=step round=5 step=1720 loss=0.135069 avg_loss_50=0.135229 elapsed_sec=130.5
+event=step round=5 step=1740 loss=0.134248 avg_loss_50=0.135516 elapsed_sec=131.9
+event=step round=5 step=1760 loss=0.133195 avg_loss_50=0.134668 elapsed_sec=133.5
+event=step round=5 step=1780 loss=0.13006 avg_loss_50=0.134025 elapsed_sec=135.1
+event=step round=5 step=1800 loss=0.135983 avg_loss_50=0.133804 elapsed_sec=136.7
+event=step round=5 step=1820 loss=0.138979 avg_loss_50=0.133754 elapsed_sec=138.3
+event=step round=5 step=1840 loss=0.131556 avg_loss_50=0.133272 elapsed_sec=139.8
+event=step round=5 step=1860 loss=0.132749 avg_loss_50=0.132487 elapsed_sec=141.2
+event=step round=5 step=1880 loss=0.134327 avg_loss_50=0.131827 elapsed_sec=142.6
+event=step round=5 step=1900 loss=0.1318 avg_loss_50=0.131481 elapsed_sec=144.1
+event=step round=5 step=1920 loss=0.130773 avg_loss_50=0.131292 elapsed_sec=145.8
+event=step round=5 step=1940 loss=0.128557 avg_loss_50=0.130441 elapsed_sec=147.3
+event=step round=5 step=1960 loss=0.134243 avg_loss_50=0.130127 elapsed_sec=148.9
+event=step round=5 step=1980 loss=0.128628 avg_loss_50=0.130038 elapsed_sec=150.4
+event=step round=5 step=2000 loss=0.124973 avg_loss_50=0.129904 elapsed_sec=152.0
+event=step round=5 step=2020 loss=0.132145 avg_loss_50=0.129751 elapsed_sec=153.5
+event=step round=5 step=2040 loss=0.124703 avg_loss_50=0.129337 elapsed_sec=155.0
+event=step round=5 step=2060 loss=0.127866 avg_loss_50=0.128613 elapsed_sec=156.5
+event=step round=5 step=2080 loss=0.127314 avg_loss_50=0.127858 elapsed_sec=158.0
+event=step round=5 step=2100 loss=0.125384 avg_loss_50=0.128394 elapsed_sec=159.5
+event=step round=5 step=2120 loss=0.130226 avg_loss_50=0.128303 elapsed_sec=161.0
+event=step round=5 step=2140 loss=0.12405 avg_loss_50=0.128109 elapsed_sec=162.5
+event=step round=5 step=2160 loss=0.125136 avg_loss_50=0.128083 elapsed_sec=164.1
+event=step round=5 step=2180 loss=0.127497 avg_loss_50=0.128 elapsed_sec=165.6
+event=step round=5 step=2200 loss=0.121755 avg_loss_50=0.127428 elapsed_sec=167.2
+event=step round=5 step=2220 loss=0.130605 avg_loss_50=0.127097 elapsed_sec=168.7
+event=step round=5 step=2240 loss=0.127057 avg_loss_50=0.126682 elapsed_sec=170.2
+event=step round=5 step=2260 loss=0.126601 avg_loss_50=0.126189 elapsed_sec=171.7
+event=step round=5 step=2280 loss=0.12887 avg_loss_50=0.126502 elapsed_sec=173.1
+event=step round=5 step=2300 loss=0.129624 avg_loss_50=0.126381 elapsed_sec=174.7
+event=step round=5 step=2320 loss=0.133281 avg_loss_50=0.126344 elapsed_sec=176.2
+event=step round=5 step=2340 loss=0.13274 avg_loss_50=0.126042 elapsed_sec=177.7
+event=step round=5 step=2360 loss=0.119799 avg_loss_50=0.125032 elapsed_sec=179.2
+event=step round=5 step=2380 loss=0.127751 avg_loss_50=0.125182 elapsed_sec=180.7
+event=step round=5 step=2400 loss=0.126287 avg_loss_50=0.124759 elapsed_sec=182.2
+event=step round=5 step=2420 loss=0.120868 avg_loss_50=0.124683 elapsed_sec=183.6
+event=step round=5 step=2440 loss=0.125081 avg_loss_50=0.124081 elapsed_sec=185.2
+event=step round=5 step=2460 loss=0.125376 avg_loss_50=0.123334 elapsed_sec=186.9
+event=step round=5 step=2480 loss=0.118657 avg_loss_50=0.122637 elapsed_sec=188.5
+event=step round=5 step=2500 loss=0.132064 avg_loss_50=0.122739 elapsed_sec=189.9
+event=step round=5 step=2520 loss=0.125887 avg_loss_50=0.122758 elapsed_sec=191.3
+event=step round=5 step=2540 loss=0.123723 avg_loss_50=0.123096 elapsed_sec=192.9
+event=step round=5 step=2560 loss=0.121977 avg_loss_50=0.122912 elapsed_sec=194.4
+event=step round=5 step=2580 loss=0.120585 avg_loss_50=0.122101 elapsed_sec=195.9
+event=step round=5 step=2600 loss=0.120852 avg_loss_50=0.122011 elapsed_sec=197.4
+event=step round=5 step=2620 loss=0.124281 avg_loss_50=0.122537 elapsed_sec=198.9
+event=step round=5 step=2640 loss=0.11786 avg_loss_50=0.12221 elapsed_sec=200.4
+event=step round=5 step=2660 loss=0.118793 avg_loss_50=0.122203 elapsed_sec=201.9
+event=step round=5 step=2680 loss=0.121613 avg_loss_50=0.121543 elapsed_sec=203.4
+event=step round=5 step=2700 loss=0.120967 avg_loss_50=0.12089 elapsed_sec=204.9
+event=step round=5 step=2720 loss=0.122864 avg_loss_50=0.120477 elapsed_sec=206.5
+event=step round=5 step=2740 loss=0.121324 avg_loss_50=0.12069 elapsed_sec=207.9
+event=step round=5 step=2760 loss=0.117256 avg_loss_50=0.120755 elapsed_sec=209.4
+event=step round=5 step=2780 loss=0.119755 avg_loss_50=0.120716 elapsed_sec=210.9
+event=step round=5 step=2800 loss=0.125513 avg_loss_50=0.119898 elapsed_sec=212.4
+event=step round=5 step=2820 loss=0.119181 avg_loss_50=0.120038 elapsed_sec=213.9
+event=step round=5 step=2840 loss=0.118822 avg_loss_50=0.120681 elapsed_sec=215.4
+event=step round=5 step=2860 loss=0.122723 avg_loss_50=0.120407 elapsed_sec=216.9
+event=step round=5 step=2880 loss=0.118087 avg_loss_50=0.120186 elapsed_sec=218.4
+event=step round=5 step=2900 loss=0.119939 avg_loss_50=0.118874 elapsed_sec=219.9
+event=step round=5 step=2920 loss=0.11727 avg_loss_50=0.118767 elapsed_sec=221.3
+event=step round=5 step=2940 loss=0.123744 avg_loss_50=0.118781 elapsed_sec=222.8
+event=step round=5 step=2960 loss=0.122116 avg_loss_50=0.119087 elapsed_sec=224.2
+event=step round=5 step=2980 loss=0.116077 avg_loss_50=0.119254 elapsed_sec=225.7
+event=step round=5 step=3000 loss=0.118515 avg_loss_50=0.119356 elapsed_sec=227.2
+event=step round=5 step=3020 loss=0.11799 avg_loss_50=0.117909 elapsed_sec=228.7
+event=step round=5 step=3040 loss=0.117018 avg_loss_50=0.116968 elapsed_sec=230.1
+event=step round=5 step=3060 loss=0.120867 avg_loss_50=0.117217 elapsed_sec=231.5
+event=step round=5 step=3080 loss=0.117972 avg_loss_50=0.11753 elapsed_sec=233.0
+event=step round=5 step=3100 loss=0.117959 avg_loss_50=0.117473 elapsed_sec=234.4
+event=step round=5 step=3120 loss=0.114882 avg_loss_50=0.117237 elapsed_sec=235.9
+event=step round=5 step=3140 loss=0.124347 avg_loss_50=0.116639 elapsed_sec=237.4
+event=step round=5 step=3160 loss=0.118355 avg_loss_50=0.116587 elapsed_sec=238.9
+event=step round=5 step=3180 loss=0.118823 avg_loss_50=0.116346 elapsed_sec=240.5
+event=step round=5 step=3200 loss=0.117647 avg_loss_50=0.116928 elapsed_sec=242.0
+event=step round=5 step=3220 loss=0.117279 avg_loss_50=0.116609 elapsed_sec=243.4
+event=step round=5 step=3240 loss=0.110627 avg_loss_50=0.115698 elapsed_sec=245.0
+event=step round=5 step=3260 loss=0.117321 avg_loss_50=0.115387 elapsed_sec=246.5
+event=step round=5 step=3280 loss=0.109945 avg_loss_50=0.115034 elapsed_sec=248.0
+event=step round=5 step=3300 loss=0.120681 avg_loss_50=0.115395 elapsed_sec=249.6
+event=step round=5 step=3320 loss=0.114594 avg_loss_50=0.115545 elapsed_sec=251.1
+event=step round=5 step=3340 loss=0.120962 avg_loss_50=0.116003 elapsed_sec=252.6
+event=step round=5 step=3360 loss=0.112884 avg_loss_50=0.115448 elapsed_sec=254.1
+event=step round=5 step=3380 loss=0.118798 avg_loss_50=0.114701 elapsed_sec=256.1
+event=step round=5 step=3400 loss=0.108893 avg_loss_50=0.114317 elapsed_sec=257.6
+event=step round=5 step=3420 loss=0.114229 avg_loss_50=0.114816 elapsed_sec=259.1
+event=step round=5 step=3440 loss=0.115089 avg_loss_50=0.11493 elapsed_sec=260.6
+event=step round=5 step=3460 loss=0.111029 avg_loss_50=0.114174 elapsed_sec=262.2
+event=step round=5 step=3480 loss=0.112157 avg_loss_50=0.114076 elapsed_sec=263.7
+event=step round=5 step=3500 loss=0.113936 avg_loss_50=0.113576 elapsed_sec=265.2
+event=step round=5 step=3520 loss=0.111483 avg_loss_50=0.113318 elapsed_sec=266.8
+event=step round=5 step=3540 loss=0.113356 avg_loss_50=0.113371 elapsed_sec=268.6
+event=step round=5 step=3560 loss=0.111166 avg_loss_50=0.113412 elapsed_sec=270.2
+event=step round=5 step=3580 loss=0.110711 avg_loss_50=0.112743 elapsed_sec=271.8
+event=step round=5 step=3600 loss=0.112213 avg_loss_50=0.112745 elapsed_sec=273.3
+event=step round=5 step=3620 loss=0.110197 avg_loss_50=0.112786 elapsed_sec=274.8
+event=step round=5 step=3640 loss=0.110961 avg_loss_50=0.11251 elapsed_sec=276.3
+event=step round=5 step=3660 loss=0.114955 avg_loss_50=0.112169 elapsed_sec=277.8
+event=step round=5 step=3680 loss=0.115763 avg_loss_50=0.112564 elapsed_sec=279.4
+event=step round=5 step=3700 loss=0.110489 avg_loss_50=0.112752 elapsed_sec=281.1
+event=step round=5 step=3720 loss=0.116706 avg_loss_50=0.112634 elapsed_sec=282.7
+event=step round=5 step=3740 loss=0.112082 avg_loss_50=0.111885 elapsed_sec=284.2
+event=step round=5 step=3760 loss=0.111643 avg_loss_50=0.111322 elapsed_sec=285.7
+event=step round=5 step=3780 loss=0.114155 avg_loss_50=0.11114 elapsed_sec=287.2
+event=step round=5 step=3800 loss=0.109266 avg_loss_50=0.11084 elapsed_sec=288.7
+event=step round=5 step=3820 loss=0.110858 avg_loss_50=0.111118 elapsed_sec=290.1
+event=step round=5 step=3840 loss=0.112076 avg_loss_50=0.111024 elapsed_sec=291.5
+event=step round=5 step=3860 loss=0.112984 avg_loss_50=0.111091 elapsed_sec=293.0
+event=step round=5 step=3880 loss=0.11167 avg_loss_50=0.111557 elapsed_sec=294.6
+event=step round=5 step=3900 loss=0.105305 avg_loss_50=0.111184 elapsed_sec=296.2
+event=step round=5 step=3920 loss=0.111881 avg_loss_50=0.110859 elapsed_sec=297.7
+event=step round=5 step=3940 loss=0.113508 avg_loss_50=0.110953 elapsed_sec=299.3
+event=round_done round=5 steps=3951 elapsed_sec=300.0 final_avg_loss=0.111227 old_nfe=2 new_nfe=1
+[distill] arm nfe=1: {'nfe': 1, 'wall_clock_sec': 0.012940406799316406, 'wall_clock_sec_per_sample': 0.00020219385623931885, 'own_quality_mean_top1_conf': 0.8461928367614746, 'own_quality_mean_entropy': 0.4491940140724182, 'trajectory_pixel_mse_vs_teacher32': 0.8225200772285461, 'trajectory_classifier_l2_vs_teacher32': 0.979098379611969, 'trajectory_classifier_kl_vs_teacher32': 3.2756564617156982, 'train_steps': 3951, 'train_elapsed_sec': 300.00530910491943, 'train_final_avg_loss': 0.11122666865587234}
+event=cascade_done stop_reason=cascade completed all rounds down to NFE=1 within budget, no collapse triggered rounds_completed=5 total_elapsed_sec=1500.7
+[distill] DONE. stop_reason=cascade completed all rounds down to NFE=1 within budget, no collapse triggered
+{
+  "32": {
+    "nfe": 32,
+    "wall_clock_sec": 0.4449646472930908,
+    "wall_clock_sec_per_sample": 0.006952572613954544,
+    "own_quality_mean_top1_conf": 0.8390488624572754,
+    "own_quality_mean_entropy": 0.44667163491249084,
+    "trajectory_pixel_mse_vs_teacher32": 0.0,
+    "trajectory_classifier_l2_vs_teacher32": 0.0,
+    "trajectory_classifier_kl_vs_teacher32": 0.0
+  },
+  "16": {
+    "nfe": 16,
+    "wall_clock_sec": 0.22969341278076172,
+    "wall_clock_sec_per_sample": 0.003588959574699402,
+    "own_quality_mean_top1_conf": 0.8624060750007629,
+    "own_quality_mean_entropy": 0.5415927171707153,
+    "trajectory_pixel_mse_vs_teacher32": 0.927733838558197,
+    "trajectory_classifier_l2_vs_teacher32": 0.9869762063026428,
+    "trajectory_classifier_kl_vs_teacher32": 2.935866594314575,
+    "train_steps": 1105,
+    "train_elapsed_sec": 300.0995740890503,
+    "train_final_avg_loss": 0.0913111551105976
+  },
+  "8": {
+    "nfe": 8,
+    "wall_clock_sec": 0.12126803398132324,
+    "wall_clock_sec_per_sample": 0.0018948130309581757,
+    "own_quality_mean_top1_conf": 0.8517105579376221,
+    "own_quality_mean_entropy": 0.4314787983894348,
+    "trajectory_pixel_mse_vs_teacher32": 0.8292394280433655,
+    "trajectory_classifier_l2_vs_teacher32": 0.9334114789962769,
+    "trajectory_classifier_kl_vs_teacher32": 3.8112637996673584,
+    "train_steps": 1676,
+    "train_elapsed_sec": 300.0008957386017,
+    "train_final_avg_loss": 0.4270268017053604
+  },
+  "4": {
+    "nfe": 4,
+    "wall_clock_sec": 0.05479073524475098,
+    "wall_clock_sec_per_sample": 0.000856105238199234,
+    "own_quality_mean_top1_conf": 0.7817378640174866,
+    "own_quality_mean_entropy": 0.5779920220375061,
+    "trajectory_pixel_mse_vs_teacher32": 1.0575417280197144,
+    "trajectory_classifier_l2_vs_teacher32": 1.0298943519592285,
+    "trajectory_classifier_kl_vs_teacher32": 4.582474231719971,
+    "train_steps": 2425,
+    "train_elapsed_sec": 300.0055994987488,
+    "train_final_avg_loss": 0.6492047333717346
+  },
+  "2": {
+    "nfe": 2,
+    "wall_clock_sec": 0.03338313102722168,
+    "wall_clock_sec_per_sample": 0.0005216114223003387,
+    "own_quality_mean_top1_conf": 0.7764661312103271,
+    "own_quality_mean_entropy": 0.6188352704048157,
+    "trajectory_pixel_mse_vs_teacher32": 0.6852405667304993,
+    "trajectory_classifier_l2_vs_teacher32": 0.7347379922866821,
+    "trajectory_classifier_kl_vs_teacher32": 2.4989683628082275,
+    "train_steps": 3262,
+    "train_elapsed_sec": 300.0139241218567,
+    "train_final_avg_loss": 0.2647957807779312
+  },
+  "1": {
+    "nfe": 1,
+    "wall_clock_sec": 0.012940406799316406,
+    "wall_clock_sec_per_sample": 0.00020219385623931885,
+    "own_quality_mean_top1_conf": 0.8461928367614746,
+    "own_quality_mean_entropy": 0.4491940140724182,
+    "trajectory_pixel_mse_vs_teacher32": 0.8225200772285461,
+    "trajectory_classifier_l2_vs_teacher32": 0.979098379611969,
+    "trajectory_classifier_kl_vs_teacher32": 3.2756564617156982,
+    "train_steps": 3951,
+    "train_elapsed_sec": 300.00530910491943,
+    "train_final_avg_loss": 0.11122666865587234
+  }
+}
