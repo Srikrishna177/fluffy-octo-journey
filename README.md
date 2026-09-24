@@ -10,8 +10,8 @@ well-motivated extension that tests a real question.
 | # | Component | Core question | Status |
 |---|---|---|---|
 | 1 | Internal verifier / dense RL-style reward | Can understanding generalize as a training signal for generation? | ✅ Done — [report](component-1-verifier-reward/report/REPORT.md) |
-| 2 | Difficulty-conditioned order controller | Does learned generation order beat arbitrary-order and strict left-to-right? | 🔵 In progress (repro done, negative result) |
-| 3 | Adaptive-compute distillation | Can a multi-turn refine loop be distilled into one adaptive-compute pass under a latency budget? | ⚪ Not started |
+| 2 | Difficulty-conditioned order controller | Does learned generation order beat arbitrary-order and strict left-to-right? | ✅ Done — [report](component-2-order-controller/report/REPORT.md) |
+| 3 | Adaptive-compute distillation | Can a multi-turn refine loop be distilled into one adaptive-compute pass under a latency budget? | 🔵 In progress |
 
 See [`docs/PROGRAM.md`](docs/PROGRAM.md) for the full directive, constraints, and working
 conventions this portfolio follows across sessions.
