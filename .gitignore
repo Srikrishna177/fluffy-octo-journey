@@ -4,3 +4,4 @@ component-3-adaptive-distill/**/checkpoints/
 __pycache__/
 *.pyc
 component-2-order-controller/repro/data/
+component-2-order-controller/extension/data/
