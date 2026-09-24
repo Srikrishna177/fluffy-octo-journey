@@ -1,0 +1,60 @@
+[data] loaded REAL MNIST (train=60000, test=10000)
+[train] data loaded in 3.5s, used_real_mnist=True, train=torch.Size([20000, 256]), test=torch.Size([2000, 256])
+/home/user/fluffy-octo-journey/component-2-order-controller/repro/src/model.py:29: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(layer, num_layers=n_layers)
+[train] model params: 324772
+[train] step=0 elapsed=0.0s loss=1.6455 avg100=1.6455 masked_acc=0.0731
+[train] step=25 elapsed=33.8s loss=0.5992 avg100=0.7371 masked_acc=0.8414
+[train] step=50 elapsed=68.3s loss=0.5772 avg100=0.6778 masked_acc=0.8430
+[train] step=75 elapsed=102.7s loss=0.5573 avg100=0.6489 masked_acc=0.8367
+[train] step=100 elapsed=136.8s loss=0.5449 avg100=0.6152 masked_acc=0.8199
+[train] step=125 elapsed=170.4s loss=0.5003 avg100=0.5670 masked_acc=0.8310
+[train] step=150 elapsed=203.5s loss=0.4450 avg100=0.5326 masked_acc=0.8428
+[train] step=175 elapsed=252.2s loss=0.4706 avg100=0.5030 masked_acc=0.8335
+[train] step=200 elapsed=286.8s loss=0.4807 avg100=0.4826 masked_acc=0.8211
+[train] step=225 elapsed=320.8s loss=0.4662 avg100=0.4717 masked_acc=0.8331
+[train] step=250 elapsed=354.7s loss=0.4598 avg100=0.4682 masked_acc=0.8307
+[train] step=275 elapsed=388.3s loss=0.4631 avg100=0.4661 masked_acc=0.8224
+[train] step=300 elapsed=422.1s loss=0.4437 avg100=0.4627 masked_acc=0.8325
+[train] step=325 elapsed=455.9s loss=0.4797 avg100=0.4618 masked_acc=0.8245
+[train] step=350 elapsed=488.9s loss=0.4585 avg100=0.4597 masked_acc=0.8304
+[train] step=375 elapsed=522.5s loss=0.4680 avg100=0.4577 masked_acc=0.8279
+[train] step=400 elapsed=556.3s loss=0.4308 avg100=0.4567 masked_acc=0.8429
+[train] step=425 elapsed=590.2s loss=0.4514 avg100=0.4555 masked_acc=0.8378
+[train] step=450 elapsed=624.2s loss=0.4537 avg100=0.4556 masked_acc=0.8336
+[train] step=475 elapsed=657.7s loss=0.4344 avg100=0.4552 masked_acc=0.8421
+[train] step=500 elapsed=692.2s loss=0.4554 avg100=0.4552 masked_acc=0.8308
+[train] step=525 elapsed=725.1s loss=0.4545 avg100=0.4555 masked_acc=0.8335
+[train] step=550 elapsed=757.9s loss=0.4574 avg100=0.4547 masked_acc=0.8252
+[train] step=575 elapsed=791.4s loss=0.4293 avg100=0.4537 masked_acc=0.8422
+[train] step=600 elapsed=826.8s loss=0.4428 avg100=0.4542 masked_acc=0.8397
+[train] step=625 elapsed=861.8s loss=0.4226 avg100=0.4516 masked_acc=0.8481
+[train] step=650 elapsed=894.9s loss=0.4419 avg100=0.4506 masked_acc=0.8332
+[train] step=675 elapsed=928.8s loss=0.4343 avg100=0.4505 masked_acc=0.8366
+[train] step=700 elapsed=962.6s loss=0.4590 avg100=0.4491 masked_acc=0.8311
+[train] step=725 elapsed=995.9s loss=0.4616 avg100=0.4496 masked_acc=0.8300
+[train] step=750 elapsed=1030.3s loss=0.4574 avg100=0.4483 masked_acc=0.8311
+[train] step=775 elapsed=1065.5s loss=0.4538 avg100=0.4479 masked_acc=0.8316
+[train] step=800 elapsed=1100.1s loss=0.4442 avg100=0.4466 masked_acc=0.8397
+[train] step=825 elapsed=1133.2s loss=0.4352 avg100=0.4455 masked_acc=0.8405
+[train] step=850 elapsed=1166.9s loss=0.4299 avg100=0.4452 masked_acc=0.8435
+[train] step=875 elapsed=1200.9s loss=0.4288 avg100=0.4445 masked_acc=0.8461
+[train] step=900 elapsed=1234.4s loss=0.4289 avg100=0.4433 masked_acc=0.8371
+[train] step=925 elapsed=1268.6s loss=0.4451 avg100=0.4434 masked_acc=0.8380
+[train] step=950 elapsed=1301.8s loss=0.4404 avg100=0.4426 masked_acc=0.8350
+[train] step=975 elapsed=1335.5s loss=0.4175 avg100=0.4409 masked_acc=0.8446
+[train] step=1000 elapsed=1369.0s loss=0.4328 avg100=0.4393 masked_acc=0.8410
+[train] step=1025 elapsed=1403.6s loss=0.4727 avg100=0.4377 masked_acc=0.8249
+[train] step=1050 elapsed=1437.3s loss=0.4454 avg100=0.4368 masked_acc=0.8376
+[train] step=1075 elapsed=1471.2s loss=0.4541 avg100=0.4348 masked_acc=0.8334
+[train] step=1100 elapsed=1504.6s loss=0.4179 avg100=0.4348 masked_acc=0.8437
+[train] step=1125 elapsed=1538.9s loss=0.4388 avg100=0.4330 masked_acc=0.8407
+[train] step=1150 elapsed=1572.7s loss=0.4283 avg100=0.4310 masked_acc=0.8430
+[train] step=1175 elapsed=1607.1s loss=0.4441 avg100=0.4315 masked_acc=0.8391
+[train] step=1200 elapsed=1641.4s loss=0.4153 avg100=0.4291 masked_acc=0.8491
+[train] step=1225 elapsed=1676.1s loss=0.4496 avg100=0.4295 masked_acc=0.8375
+[train] step=1250 elapsed=1709.5s loss=0.4324 avg100=0.4275 masked_acc=0.8383
+[train] step=1275 elapsed=1743.2s loss=0.4276 avg100=0.4249 masked_acc=0.8439
+[train] step=1300 elapsed=1776.6s loss=0.4416 avg100=0.4252 masked_acc=0.8377
+[train] budget exhausted at step 1318, elapsed=1801.3s
+[train] DONE. steps=1318 total_elapsed=1801.3s checkpoint=checkpoints/maskgit.pt

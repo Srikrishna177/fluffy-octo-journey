@@ -1,0 +1,75 @@
+{
+  "extension": "on-policy training-state generation (exposure-bias test)",
+  "wall_clock_pool_gen_sec": 44.26786208152771,
+  "wall_clock_train_sec": 300.28572487831116,
+  "wall_clock_onpolicy_run_total_sec": 345.64690232276917,
+  "hyperparameters_matched_to_repro_round1": {
+    "batch_size": 64,
+    "lr": 0.0002,
+    "round_budget_sec": 300.0,
+    "round_max_steps": 4000,
+    "train_seed": 101,
+    "student_init": "deep copy of frozen teacher"
+  },
+  "pool_size": 4096,
+  "eval_seed": 12345,
+  "n_eval": 64,
+  "results_by_arm": {
+    "teacher_32step": {
+      "nfe": 32,
+      "wall_clock_sec": 0.5809693336486816,
+      "wall_clock_sec_per_sample": 0.00907764583826065,
+      "own_quality_mean_top1_conf": 0.8390488624572754,
+      "own_quality_mean_entropy": 0.44667163491249084,
+      "trajectory_pixel_mse_vs_teacher32": 0.0,
+      "trajectory_classifier_l2_vs_teacher32": 0.0,
+      "trajectory_classifier_kl_vs_teacher32": 0.0,
+      "pred_class_histogram": {
+        "1": 1,
+        "2": 13,
+        "3": 11,
+        "4": 3,
+        "5": 15,
+        "7": 1,
+        "8": 20
+      },
+      "population_class_entropy_nats": 1.603376442712807,
+      "frac_samples_in_majority_class": 0.3125
+    },
+    "student_16step_data_marginal": {
+      "nfe": 16,
+      "wall_clock_sec": 0.2341456413269043,
+      "wall_clock_sec_per_sample": 0.0036585256457328796,
+      "own_quality_mean_top1_conf": 0.8624060750007629,
+      "own_quality_mean_entropy": 0.5415927171707153,
+      "trajectory_pixel_mse_vs_teacher32": 0.927733838558197,
+      "trajectory_classifier_l2_vs_teacher32": 0.9869762063026428,
+      "trajectory_classifier_kl_vs_teacher32": 2.935866594314575,
+      "pred_class_histogram": {
+        "8": 64
+      },
+      "population_class_entropy_nats": 0.0,
+      "frac_samples_in_majority_class": 1.0
+    },
+    "student_16step_onpolicy": {
+      "nfe": 16,
+      "wall_clock_sec": 0.2621119022369385,
+      "wall_clock_sec_per_sample": 0.004095498472452164,
+      "own_quality_mean_top1_conf": 0.8734102845191956,
+      "own_quality_mean_entropy": 0.5351766347885132,
+      "trajectory_pixel_mse_vs_teacher32": 1.2700605392456055,
+      "trajectory_classifier_l2_vs_teacher32": 0.9900023341178894,
+      "trajectory_classifier_kl_vs_teacher32": 2.9845688343048096,
+      "train_steps": 1059,
+      "train_elapsed_sec": 300.28572487831116,
+      "train_final_avg_loss": 0.13322188064455986,
+      "pool_gen_elapsed_sec": 44.26786208152771,
+      "pool_size": 4096,
+      "pred_class_histogram": {
+        "8": 64
+      },
+      "population_class_entropy_nats": 0.0,
+      "frac_samples_in_majority_class": 1.0
+    }
+  }
+}
