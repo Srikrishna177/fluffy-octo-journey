@@ -117,4 +117,22 @@ blocks one of the three components.
   reduction: the frozen, untrained teacher samples fine at 8-32 steps) and ruled out
   learning-rate tuning as a fix (10x lower LR still collapses; collapse sets in within ~20
   gradient steps, long before training loss converges). Full log:
-  `component-3-adaptive-distill/logs/RUN_LOG.md`. Extension phase not yet started.
+  `component-3-adaptive-distill/logs/RUN_LOG.md`.
+- 2026-09-24: Component 3 extension complete. The reproduction's own hypothesis (exposure
+  bias: the paper's Algorithm 2 trains on data-marginal noisy states, never on the model's
+  actual rollout from pure noise) was tested directly by generating an on-policy replay pool
+  (4,096 states visited by the teacher's own 32-step DDIM rollout) and training a 16-step
+  student on it with identical hyperparameters to the reproduction's round 1. Result: the fix
+  did NOT work. Population diversity is byte-for-byte identical to the data-marginal
+  baseline (both collapse to predicting one class for all 64/64 eval samples; population
+  entropy 0.00 nats either way), and trajectory-matching fidelity to the teacher was
+  slightly *worse* under on-policy training (pixel MSE 1.27 vs. 0.93), not better. Confirmed
+  visually (on-policy and data-marginal sample rows indistinguishable, both unstructured
+  noise vs. teacher's clear digit structure). This rules out exposure bias as a *sufficient*
+  explanation and narrows the likely cause toward toy-scale model capacity or the
+  unweighted-loss deviation, for a full-scale RunPod follow-up to check. Full log:
+  `component-3-adaptive-distill/extension/RUN_LOG.md`. Component 3 artifact complete
+  end-to-end: `component-3-adaptive-distill/report/REPORT.md`.
+
+**Portfolio complete: all 3 components shipped** (reproduction + extension + report each),
+2026-09-24.

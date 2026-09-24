@@ -11,7 +11,13 @@ well-motivated extension that tests a real question.
 |---|---|---|---|
 | 1 | Internal verifier / dense RL-style reward | Can understanding generalize as a training signal for generation? | ✅ Done — [report](component-1-verifier-reward/report/REPORT.md) |
 | 2 | Difficulty-conditioned order controller | Does learned generation order beat arbitrary-order and strict left-to-right? | ✅ Done — [report](component-2-order-controller/report/REPORT.md) |
-| 3 | Adaptive-compute distillation | Can a multi-turn refine loop be distilled into one adaptive-compute pass under a latency budget? | 🔵 In progress |
+| 3 | Adaptive-compute distillation | Can a multi-turn refine loop be distilled into one adaptive-compute pass under a latency budget? | ✅ Done — [report](component-3-adaptive-distill/report/REPORT.md) |
+
+**All three components complete.** Each shipped a real reproduction + a real extension, with
+honest results including two full negative results (Component 2's confidence-order underperforming
+fixed baselines, and its learned-policy extension not rescuing that; Component 3's progressive-distillation
+collapse, and its exposure-bias-fix extension not resolving it) and one mixed/ambiguous result
+(Component 1's internal-verifier extension). No result was manufactured or rounded up.
 
 See [`docs/PROGRAM.md`](docs/PROGRAM.md) for the full directive, constraints, and working
 conventions this portfolio follows across sessions.
