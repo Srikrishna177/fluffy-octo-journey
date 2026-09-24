@@ -30,3 +30,7 @@
 [train] step=600 elapsed=826.8s loss=0.4428 avg100=0.4542 masked_acc=0.8397
 [train] step=625 elapsed=861.8s loss=0.4226 avg100=0.4516 masked_acc=0.8481
 [train] step=650 elapsed=894.9s loss=0.4419 avg100=0.4506 masked_acc=0.8332
+[train] step=675 elapsed=928.8s loss=0.4343 avg100=0.4505 masked_acc=0.8366
+[train] step=700 elapsed=962.6s loss=0.4590 avg100=0.4491 masked_acc=0.8311
+[train] step=725 elapsed=995.9s loss=0.4616 avg100=0.4496 masked_acc=0.8300
+[train] step=750 elapsed=1030.3s loss=0.4574 avg100=0.4483 masked_acc=0.8311
