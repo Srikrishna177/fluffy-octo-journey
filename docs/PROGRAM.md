@@ -73,4 +73,16 @@ blocks one of the three components.
   less digit-like shortcut); the numeric KL trajectory looked healthier but was judged a
   likely confound (residual-gradient exhaustion, not real robustness) rather than taken at
   face value. Full report: `component-1-verifier-reward/report/REPORT.md`.
-- 2026-09-24: Starting Component 2 (difficulty-conditioned order controller) scouting.
+- 2026-09-24: Component 2 scouted and anchored on MaskGIT (confidence-ranked parallel
+  decoding). Reproduction complete: on toy MNIST-16x16 masked-token reconstruction (75% mask,
+  8-step decode, 1000-image eval, one shared trained transformer), MaskGIT's confidence-based
+  reveal order did NOT beat fixed baselines — it was slightly worse than both raster and
+  random order (token-recon acc 0.8447 vs 0.8499/0.8493; independent classifier-judge
+  top-1-match 41.2% vs 50.2%/46.5%). Visually confirmed via sample-reconstruction grids
+  (confidence-order outputs are more fragmented/incoherent). Logged honestly as a negative
+  result, with a pre-registered (not post-hoc) risk in DECISION.md as the likely explanation:
+  confidence miscalibration at the untrained 75%-mask extreme, compounded by small model/
+  vocab capacity. Full log: `component-2-order-controller/logs/RUN_LOG.md`. Proceeding to the
+  extension (learned order-policy vs. this same confidence heuristic and the fixed baselines)
+  — now an even sharper test, since it asks whether learning can fix what the hand-designed
+  heuristic got wrong here.
