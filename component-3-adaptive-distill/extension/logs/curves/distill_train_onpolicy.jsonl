@@ -1,0 +1,18 @@
+{"event": "start", "n_params": 308641, "args": {"T": 50, "base_nfe": 32, "pool_size": 4096, "pool_batch": 512, "pool_seed": 999, "batch_size": 64, "lr": 0.0002, "round_budget_sec": 300.0, "round_max_steps": 4000, "train_seed": 101, "n_eval": 64, "eval_seed": 12345}}
+{"event": "pool_done", "elapsed_sec": 44.3, "pool_size": 4096, "n_pair_slots": 16, "n_rollout_batches": 8}
+{"event": "step", "round": 1, "step": 0, "loss": 2.672817, "avg_loss_50": 2.672817, "elapsed_sec": 0.3}
+{"event": "step", "round": 1, "step": 20, "loss": 1.205118, "avg_loss_50": 1.615892, "elapsed_sec": 5.8}
+{"event": "step", "round": 1, "step": 40, "loss": 1.072939, "avg_loss_50": 1.349796, "elapsed_sec": 11.4}
+{"event": "step", "round": 1, "step": 60, "loss": 0.843482, "avg_loss_50": 1.057092, "elapsed_sec": 17.3}
+{"event": "step", "round": 1, "step": 80, "loss": 0.864229, "avg_loss_50": 0.900893, "elapsed_sec": 23.0}
+{"event": "step", "round": 1, "step": 100, "loss": 0.570324, "avg_loss_50": 0.785999, "elapsed_sec": 28.7}
+{"event": "step", "round": 1, "step": 120, "loss": 0.587548, "avg_loss_50": 0.700036, "elapsed_sec": 34.9}
+{"event": "step", "round": 1, "step": 140, "loss": 0.519201, "avg_loss_50": 0.616802, "elapsed_sec": 40.5}
+{"event": "step", "round": 1, "step": 160, "loss": 0.460382, "avg_loss_50": 0.546274, "elapsed_sec": 46.4}
+{"event": "step", "round": 1, "step": 180, "loss": 0.429095, "avg_loss_50": 0.494241, "elapsed_sec": 52.3}
+{"event": "step", "round": 1, "step": 200, "loss": 0.400527, "avg_loss_50": 0.443802, "elapsed_sec": 57.8}
+{"event": "step", "round": 1, "step": 220, "loss": 0.374906, "avg_loss_50": 0.42108, "elapsed_sec": 63.6}
+{"event": "step", "round": 1, "step": 240, "loss": 0.314705, "avg_loss_50": 0.390905, "elapsed_sec": 69.3}
+{"event": "step", "round": 1, "step": 260, "loss": 0.292225, "avg_loss_50": 0.368717, "elapsed_sec": 75.2}
+{"event": "step", "round": 1, "step": 280, "loss": 0.311896, "avg_loss_50": 0.363424, "elapsed_sec": 81.2}
+{"event": "step", "round": 1, "step": 300, "loss": 0.215992, "avg_loss_50": 0.342991, "elapsed_sec": 87.0}
