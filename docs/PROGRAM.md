@@ -64,3 +64,13 @@ blocks one of the three components.
 ## Status log
 
 - 2026-09-22: Program scaffolding created. Component 1 scouting started.
+- 2026-09-22/23: Component 1 done. Anchored on DDPO/DPOK; toy MNIST-16x16 reproduction
+  cleanly reproduced the core claim (reward 0.067→1.0, frac-argmax-target 9.4%→100%) and
+  DDPO's own documented reward-over-optimization failure mode (diversity collapse, KL-to-base
+  →53 nats). Extension tested an internal (generator-feature) verifier vs. the external
+  classifier reward: mixed/ambiguous result, reported honestly — qualitative evidence
+  (sample grids) favors "internal verifier is easier to hack" (collapsed to a cruder,
+  less digit-like shortcut); the numeric KL trajectory looked healthier but was judged a
+  likely confound (residual-gradient exhaustion, not real robustness) rather than taken at
+  face value. Full report: `component-1-verifier-reward/report/REPORT.md`.
+- 2026-09-24: Starting Component 2 (difficulty-conditioned order controller) scouting.
