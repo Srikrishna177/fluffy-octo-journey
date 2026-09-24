@@ -86,3 +86,17 @@ blocks one of the three components.
   extension (learned order-policy vs. this same confidence heuristic and the fixed baselines)
   — now an even sharper test, since it asks whether learning can fix what the hand-designed
   heuristic got wrong here.
+- 2026-09-24: Component 2 extension complete. Trained a small MLP policy (99-dim features:
+  frozen transformer's hidden state + position + confidence + entropy) on ~3.84M
+  ground-truth-labeled (position, is-correct) examples from the MNIST train split, then added
+  it as a 4th "learned" reveal-order arm to the reproduction's exact 1000-image eval protocol.
+  Result: learned (0.8452 token-recon acc / 40.5% classifier top-1) did not clearly beat
+  confidence (0.8447 / 41.2%) — the two metrics disagree on direction, indicating a
+  near-zero true gap — and both remained clearly below the raster (0.8499/50.2%) and random
+  (0.8493/46.5%) fixed baselines. Supports the pre-registered hypothesis "learned doesn't
+  clearly beat confidence either" (the policy's own held-out accuracy, 87.4%, was only ~2
+  points above a majority-class baseline of 85.4%, suggesting limited predictable signal at
+  this scale, not a flawed ranking mechanism). No train/eval leakage (policy trains on MNIST
+  train split, eval uses the MNIST test split — disjoint datasets). Full log:
+  `component-2-order-controller/extension/RUN_LOG.md`. Component 2 artifact complete
+  end-to-end: `component-2-order-controller/report/REPORT.md`. Proceeding to component 3.
