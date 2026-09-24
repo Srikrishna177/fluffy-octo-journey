@@ -106,9 +106,11 @@ def plot_sample_grids():
     col_titles = ["ground truth", "75% masked input"] + [f"{a} order" for a in arms]
     for r in range(n):
         gt_img = to_img(tokens_gt[r])
-        masked_img = to_img(tokens_gt[r], masked_sentinel=True)
+        masked_img = to_img(masked_view[r], masked_sentinel=True)
+        masked_cmap = plt.get_cmap("gray").copy()
+        masked_cmap.set_bad(color="#D9534F")  # red = still-masked position
         axes[r, 0].imshow(gt_img, cmap="gray", vmin=-1, vmax=1)
-        axes[r, 1].imshow(masked_img, cmap="gray", vmin=-1, vmax=1)
+        axes[r, 1].imshow(masked_img, cmap=masked_cmap, vmin=-1, vmax=1)
         for c, arm in enumerate(arms):
             recon_img = to_img(finals[arm][r])
             axes[r, 2 + c].imshow(recon_img, cmap="gray", vmin=-1, vmax=1)
