@@ -48,3 +48,10 @@
 {"event": "step", "round": 1, "step": 900, "loss": 0.102343, "avg_loss_50": 0.158082, "elapsed_sec": 255.6}
 {"event": "step", "round": 1, "step": 920, "loss": 0.128448, "avg_loss_50": 0.149133, "elapsed_sec": 261.1}
 {"event": "step", "round": 1, "step": 940, "loss": 0.103479, "avg_loss_50": 0.144679, "elapsed_sec": 267.0}
+{"event": "step", "round": 1, "step": 960, "loss": 0.140214, "avg_loss_50": 0.143979, "elapsed_sec": 273.0}
+{"event": "step", "round": 1, "step": 980, "loss": 0.100808, "avg_loss_50": 0.144538, "elapsed_sec": 278.9}
+{"event": "step", "round": 1, "step": 1000, "loss": 0.096461, "avg_loss_50": 0.140441, "elapsed_sec": 284.4}
+{"event": "step", "round": 1, "step": 1020, "loss": 0.136027, "avg_loss_50": 0.140833, "elapsed_sec": 290.1}
+{"event": "step", "round": 1, "step": 1040, "loss": 0.076344, "avg_loss_50": 0.138702, "elapsed_sec": 295.5}
+{"event": "round_done", "round": 1, "steps": 1059, "elapsed_sec": 300.3, "final_avg_loss": 0.133222, "old_nfe": 32, "new_nfe": 16}
+{"event": "onpolicy_run_done", "pool_elapsed_sec": 44.3, "train_elapsed_sec": 300.3, "total_elapsed_sec": 345.6}
