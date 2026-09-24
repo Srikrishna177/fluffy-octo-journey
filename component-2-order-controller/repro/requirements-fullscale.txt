@@ -1,0 +1,7 @@
+# Extra deps for a full-scale rerun (real VQ-GAN tokenizer + ImageNet-scale
+# MaskGIT + the Halton-scheduler comparison from arXiv 2503.17076), on top of
+# requirements.txt. Not installed/used in the CPU toy repro.
+taming-transformers-rom1504   # public VQGAN implementation/checkpoints (or swap for lucidrains/vqgan-pytorch)
+einops
+webdataset                    # ImageNet/streaming-scale data loading
+tqdm
