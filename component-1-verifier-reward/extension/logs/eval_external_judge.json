@@ -1,0 +1,17 @@
+{
+  "reward_source_for_training": "internal_probe",
+  "judge_for_this_eval": "external_frozen_classifier (repro/checkpoints/classifier.pt)",
+  "n_eval": 64,
+  "target_class": 7,
+  "seed": 12345,
+  "external_judge_reward_mean_before": 0.06716180592775345,
+  "external_judge_reward_std_before": 0.1765996515750885,
+  "external_judge_reward_mean_after": 0.959355890750885,
+  "external_judge_reward_std_after": 0.12679769098758698,
+  "external_judge_reward_delta": 0.8921940848231316,
+  "external_judge_frac_argmax_is_target_before": 0.09375,
+  "external_judge_frac_argmax_is_target_after": 0.984375,
+  "internal_probe_reward_mean_before": 0.019052322953939438,
+  "internal_probe_reward_mean_after": 0.9999607801437378,
+  "internal_probe_reward_std_after": 5.4239717428572476e-05
+}
