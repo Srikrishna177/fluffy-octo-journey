@@ -1,0 +1,39 @@
+{
+  "n_eval": 40,
+  "mask_frac": 0.75,
+  "n_masked_tokens": 192,
+  "steps": 8,
+  "reveal_schedule_remaining_masked": [
+    192,
+    188,
+    177,
+    160,
+    136,
+    107,
+    73,
+    37,
+    0
+  ],
+  "seed": 12345,
+  "used_real_mnist": true,
+  "results": {
+    "raster": {
+      "token_reconstruction_acc": 0.8227864583333333,
+      "token_acc_std_across_images": 0.0592021644115448,
+      "classifier_true_label_confidence_mean": 0.20606479048728943,
+      "classifier_top1_matches_true_label_frac": 0.25
+    },
+    "random": {
+      "token_reconstruction_acc": 0.82265625,
+      "token_acc_std_across_images": 0.06038246676325798,
+      "classifier_true_label_confidence_mean": 0.24619624018669128,
+      "classifier_top1_matches_true_label_frac": 0.32499998807907104
+    },
+    "confidence": {
+      "token_reconstruction_acc": 0.8225260416666667,
+      "token_acc_std_across_images": 0.06210240721702576,
+      "classifier_true_label_confidence_mean": 0.19069698452949524,
+      "classifier_top1_matches_true_label_frac": 0.22499999403953552
+    }
+  }
+}

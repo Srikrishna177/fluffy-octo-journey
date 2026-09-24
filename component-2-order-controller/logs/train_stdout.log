@@ -1,0 +1,13 @@
+[data] loaded REAL MNIST (train=60000, test=10000)
+[train] data loaded in 3.5s, used_real_mnist=True, train=torch.Size([20000, 256]), test=torch.Size([2000, 256])
+/home/user/fluffy-octo-journey/component-2-order-controller/repro/src/model.py:29: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(layer, num_layers=n_layers)
+[train] model params: 324772
+[train] step=0 elapsed=0.0s loss=1.6455 avg100=1.6455 masked_acc=0.0731
+[train] step=25 elapsed=33.8s loss=0.5992 avg100=0.7371 masked_acc=0.8414
+[train] step=50 elapsed=68.3s loss=0.5772 avg100=0.6778 masked_acc=0.8430
+[train] step=75 elapsed=102.7s loss=0.5573 avg100=0.6489 masked_acc=0.8367
+[train] step=100 elapsed=136.8s loss=0.5449 avg100=0.6152 masked_acc=0.8199
+[train] step=125 elapsed=170.4s loss=0.5003 avg100=0.5670 masked_acc=0.8310
+[train] step=150 elapsed=203.5s loss=0.4450 avg100=0.5326 masked_acc=0.8428
+[train] step=175 elapsed=252.2s loss=0.4706 avg100=0.5030 masked_acc=0.8335
